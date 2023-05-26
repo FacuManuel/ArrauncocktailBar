@@ -70,7 +70,8 @@ h1 {
     border-color: rgb(255, 255, 255);
     object-fit: cover;
     border-radius: 100%;
-    padding: 1%;
+    padding: 2%;
+    margin: 5%;
 
 
 }
@@ -233,8 +234,7 @@ footer {
     background-position-y: 80%;
     border: 5px solid black;
     margin-bottom: 0px;
-    padding-right: 1%;
-    padding-left: 1%;
+    
 }
 
 .footer,
@@ -256,7 +256,8 @@ footer {
     font-size: 0.5rem;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-right: 10vh;
+    margin-right: 3vh;
+    
 
 }
 
@@ -450,10 +451,10 @@ iframe {
 /*cards*/
 
 .cardscocteles {
-    display: flex;
+    display: grid;
     width: 400px;
     background-color: black;
-    padding: 5px;
+    padding: 3px;
     margin: 5px 5px 5px 5px;
     border: 0;
     object-fit: cover;
@@ -474,12 +475,18 @@ iframe {
 
 }
 
-.containernuestros {
+.containernuestrosgrid {
     text-align: center;
     margin: 2%;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto auto;
 
 }
 
+.containernuestros {
+    text-align: center;
+    margin: 2%;}
 /* final cards*/
 
 
