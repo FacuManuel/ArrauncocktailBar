@@ -234,7 +234,7 @@ footer {
     background-position-y: 80%;
     border: 5px solid black;
     margin-bottom: 0px;
-    
+
 }
 
 .footer,
@@ -257,7 +257,7 @@ footer {
     margin-top: 1%;
     margin-bottom: 1%;
     margin-right: 3vh;
-    
+
 
 }
 
@@ -320,6 +320,10 @@ iframe {
     transition: all 0.5s ease-in-out;
 }
 
+.grid-container {
+    width: 100%;
+}
+
 /*final transicion y efecto de imagenes*/
 
 
@@ -344,14 +348,13 @@ iframe {
 }
 
 .h2historia {
-    font-size: 55px;
+    font-size: 3rem;
     text-align: center;
     text-shadow: 2px 2px 2px black;
 }
 
 .section1 {
     text-align: center;
-    margin: 100px;
     background-color: rgba(42, 2, 128, 0.449);
     border: 2px solid black;
     padding: 5px;
@@ -359,11 +362,10 @@ iframe {
 }
 
 .section2 {
+    display: flex;
     text-align: center;
-    margin: 100px;
     background-color: rgba(42, 2, 128, 0.689);
     border: 2px solid black;
-    padding: 5px;
     text-shadow: 2px 2px 2px black
 }
 
@@ -393,7 +395,7 @@ iframe {
 }
 
 .h3clasicos {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -476,17 +478,20 @@ iframe {
 }
 
 .containernuestrosgrid {
+    width: 80%;
     text-align: center;
     margin: 2%;
     display: grid;
-    grid-template-columns:auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
 
 }
 
 .containernuestros {
     text-align: center;
-    margin: 2%;}
+    margin: 2%;
+}
+
 /* final cards*/
 
 
@@ -499,14 +504,13 @@ iframe {
 .bushmills {
     object-fit: cover;
     text-align: center;
+
 }
 
 .imagenbushmills {
     border: 3px solid black;
-    border-radius: 5%;
-    width: 500px;
-    height: 500px;
     object-fit: cover;
+    width: 60%;
 }
 
 /*final historia*/
@@ -724,7 +728,17 @@ iframe {
 
     /*final de tiulos, textos*/
 
+    .grid-container {
+        width: 100%;
+       
 
+    }
+
+    .galeriaindex {width: ;}
+
+    .containernuestros {
+        width: 100%;
+    }
 
 
 
@@ -740,6 +754,7 @@ iframe {
     }
 
     /*final transicion y efecto de imagenes*/
+
 }
 
 /*2da pre entrega*/
