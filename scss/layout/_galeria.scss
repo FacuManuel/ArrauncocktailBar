@@ -6,17 +6,15 @@
 .containernuestros2 {
     text-align: center;
     margin: 2%;
+    display: flex;
 }
 
-.grid-container {
-    width: 100%;
-}
+.grid-container {width: 100%;}
 
 .galeriaphotos {
-    display: inline-flex;
     justify-content: center;
     align-items: center;
-    max-width: 23%;
+    max-width: 21%;
     padding: 4px;
     object-fit: cover;
     background-color: black;

@@ -1,0 +1,436 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.h2index {
+  font-size: 35px;
+}
+
+.conjuntoinfoindex {
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+}
+
+h3 {
+  color: azure;
+}
+
+.topfotos {
+  font-size: 34px;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  text-align: center;
+}
+
+.ptopfotos {
+  font-size: 22px;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  text-align: center;
+}
+
+.titulosfotosresponsive {
+  color: azure;
+}
+
+.galeriaindex {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 23%;
+  padding: 4px;
+  object-fit: cover;
+  background-color: black;
+  margin-left: 2px;
+}
+
+.containernuestros {
+  text-align: center;
+  margin: 2%;
+}
+
+/* mapa */
+iframe {
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 350px;
+  height: 250px;
+}
+
+/*final mapa*/
+.h3clasicos {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contenedorclasicos {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textococtelesclasicos {
+  background-color: rgba(42, 2, 128, 0.449);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  border: 2px solid black;
+  padding: 5px;
+  max-width: 100%;
+}
+
+.listaclasicos {
+  list-style: none;
+  max-width: 100%;
+  align-self: center;
+}
+
+.liclasicos {
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 10px 5px 10px aquamarine;
+}
+
+.h2historia {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.section1 {
+  text-align: center;
+  background-color: rgba(42, 2, 128, 0.449);
+  border: 2px solid black;
+  padding: 5px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.section2 {
+  display: flex;
+  text-align: center;
+  background-color: rgba(42, 2, 128, 0.689);
+  border: 2px solid black;
+  text-shadow: 2px 2px 2px black;
+}
+
+.bushmills {
+  object-fit: cover;
+  text-align: center;
+}
+
+.imagenbushmills {
+  border: 3px solid black;
+  object-fit: cover;
+  width: 60%;
+}
+
+.h4galeria {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.containernuestros2 {
+  text-align: center;
+  margin: 2%;
+  display: flex;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.galeriaphotos {
+  justify-content: center;
+  align-items: center;
+  max-width: 21%;
+  padding: 4px;
+  object-fit: cover;
+  background-color: black;
+  margin-left: 2px;
+}
+
+.h5telefono {
+  font-size: 20px;
+  padding: 0%;
+  margin: 0%;
+}
+
+.h6mailto {
+  font-size: 25px;
+  padding: 0%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.mailto2 {
+  display: block;
+  padding-bottom: 5%;
+}
+
+.nuestrosh2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.nuestrosh3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.cardscocteles {
+  display: grid;
+  width: 400px;
+  background-color: black;
+  padding: 3px;
+  margin: 5px 5px 5px 5px;
+  border: 0;
+  object-fit: cover;
+  text-align: center;
+}
+
+.cardsbody img {
+  width: 100%;
+  object-fit: cover;
+  position: sticky;
+}
+
+.cardsbody {
+  display: inline-block;
+  width: 100%;
+}
+
+.containernuestrosgrid {
+  width: 100%;
+  text-align: center;
+  margin: 2%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/bartenderanime.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position-x: 50%;
+  background-position-y: 80%;
+  border: 5px solid black;
+  margin-bottom: 0px;
+}
+
+.footer,
+.ulnav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 3px;
+  position: relative;
+  padding-right: 3px;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.copryght {
+  display: inline-flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: end;
+  font-size: 0.5rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 3vh;
+}
+
+.pfooter {
+  text-align: end;
+}
+
+.conjuntofooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navfooter {
+  display: flex;
+  align-self: center;
+}
+
+.buttonmail {
+  text-shadow: 2px 2px 2px black;
+  border: 2px solid rgba(2, 221, 254, 0.546);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/*header*/
+.conjuntoheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logoytituloresponsive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header {
+  display: block;
+  background-image: url(../imagenes/fondos/galaxia.webp);
+  background-repeat: repeat;
+  object-fit: cover;
+  position: fixed;
+  border: 2px solid black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+  padding-left: 30px;
+}
+
+.tituloh1 {
+  font-size: 1.7em;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+}
+
+.logomenu {
+  width: 80px;
+  background-color: rgb(49, 47, 47);
+  border-style: outset;
+  border-color: rgb(255, 255, 255);
+  object-fit: cover;
+  border-radius: 100%;
+  padding: 2%;
+  margin: 5%;
+}
+
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3vh;
+}
+
+/*final header*/
+/*conjunto menu nav*/
+.navbox {
+  background-image: url(../imagenes/fondos/galaxia.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+
+.navmenu ul li {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.navmenu ul li a {
+  text-decoration: none;
+  text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0px;
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: rgba(55, 56, 56, 0.566);
+  margin-left: 1vh;
+  cursor: pointer;
+}
+
+/*fin conjunto menu nav*/
+body {
+  width: 100%;
+  background-image: url(../imagenes/fondos/arrauntoshan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: sticky;
+  color: azure;
+  font-family: sans-serif, arial;
+  display: block;
+}
+
+main {
+  margin-top: 15vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(253, 253, 253);
+}
+
+a:visited {
+  color: rgb(250, 252, 250);
+}
+
+a:hover {
+  color: rgb(0, 225, 255);
+  text-shadow: 20px rgb(15, 15, 15);
+}
+
+/* fin enlaces */
+/*transicion y efecto de imagenes*/
+.galeriaindex {
+  filter: grayscale(100%);
+  transition: all 2s ease-in-out;
+}
+
+.galeriaindex:hover {
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+/*final transicion y efecto de imagenes*/
+/* Enviar un Correo */
+.mailto {
+  display: block;
+  padding-bottom: 5%;
+}
+
+.buttonmail {
+  text-shadow: 2px 2px 2px black;
+  border: 2px solid rgba(2, 221, 254, 0.546);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.buttonmail2 {
+  text-shadow: 2px 2px 2px black;
+  border: 2px solid rgba(2, 221, 254, 0.546);
+  padding: 1px;
+  border-radius: 4px;
+}
+
+/* Final de Enviar un Correo */
+
+/*# sourceMappingURL=style.css.map */
