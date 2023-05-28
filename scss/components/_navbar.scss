@@ -1,0 +1,99 @@
+/*header*/
+.conjuntoheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.logoytituloresponsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+header {
+    display: block;
+    background-image: url(../imagenes/fondos/galaxia.webp);
+    background-repeat: repeat;
+    object-fit: cover;
+    position: fixed;
+    border: 2px solid black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+    padding-left: 30px;
+}
+
+.tituloh1 {
+    font-size: 1.7em;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+}
+
+.logomenu {
+    width: 80px;
+    background-color: rgb(49, 47, 47);
+    border-style: outset;
+    border-color: rgb(255, 255, 255);
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 2%;
+    margin: 5%;
+
+
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3vh;
+
+}
+
+/*final header*/
+
+/*conjunto menu nav*/
+.navbox {
+    background-image: url(../imagenes/fondos/galaxia.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+
+}
+
+.navmenu ul li {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
+    color: white;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: rgba(55, 56, 56, 0.566);
+    margin-left: 1vh;
+
+
+}
+
+/*fin conjunto menu nav*/

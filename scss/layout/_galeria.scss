@@ -1,0 +1,25 @@
+.h4galeria {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.containernuestros2 {
+    text-align: center;
+    margin: 2%;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.galeriaphotos {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 23%;
+    padding: 4px;
+    object-fit: cover;
+    background-color: black;
+    margin-left: 2px;
+
+}

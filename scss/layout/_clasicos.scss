@@ -1,0 +1,33 @@
+.h3clasicos {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contenedorclasicos {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textococtelesclasicos {
+    background-color: rgba(42, 2, 128, 0.449);
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    border: 2px solid black;
+    padding: 5px;
+    max-width: 100%;
+}
+
+.listaclasicos {
+    list-style: none;
+    max-width: 100%;
+    align-self: center;
+
+}
+
+.liclasicos {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 10px 5px 10px aquamarine;
+}

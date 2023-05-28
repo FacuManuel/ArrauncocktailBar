@@ -1,0 +1,34 @@
+/* Enlaces */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(253, 253, 253);
+}
+
+a:visited {
+    color: rgb(250, 252, 250);
+}
+
+a:hover {
+    color: rgb(0, 225, 255);
+    text-shadow: 20px rgb(15, 15, 15)
+}
+
+/* fin enlaces */
+
+/*transicion y efecto de imagenes*/
+.galeriaindex {
+    filter: grayscale(100%);
+    transition: all 2s ease-in-out;
+}
+
+.galeriaindex:hover {
+    filter: grayscale(0%);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+/*final transicion y efecto de imagenes*/

@@ -1,0 +1,57 @@
+.h2index {
+    font-size: 35px;
+}
+
+.conjuntoinfoindex {
+    display: flex;
+
+}
+
+h3 {
+    color: azure;
+}
+
+.topfotos {
+    font-size: 34px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.ptopfotos {
+    font-size: 22px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.titulosfotosresponsive {
+    color: azure;
+}
+
+.galeriaindex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 23%;
+    padding: 4px;
+    object-fit: cover;
+    background-color: black;
+    margin-left: 2px;
+
+}
+
+.containernuestros {
+    text-align: center;
+    margin: 2%;
+}
+
+/* mapa */
+iframe {
+
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 350px;
+    height: 250px;
+}
+
+/*final mapa*/

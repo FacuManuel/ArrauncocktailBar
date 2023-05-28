@@ -1,0 +1,62 @@
+footer {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/bartenderanime.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position-x: 50%;
+    background-position-y: 80%;
+    border: 5px solid black;
+    margin-bottom: 0px;
+
+}
+
+.footer,
+.ulnav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px;
+    position: relative;
+    padding-right: 3px;
+    font-size: 0.6rem;
+
+}
+
+.copryght {
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: end;
+    font-size: 0.5rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 3vh;
+
+
+}
+
+.pfooter {
+    text-align: end;
+}
+
+.conjuntofooter {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.navfooter {
+    display: flex;
+    align-self: center;
+}
+
+
+.buttonmail {
+    text-shadow: 2px 2px 2px black;
+    border: 2px solid rgba(2, 221, 254, 0.546);
+    padding: 4px;
+    border-radius: 4px;
+
+}
