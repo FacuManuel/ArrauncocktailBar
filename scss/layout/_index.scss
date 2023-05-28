@@ -45,12 +45,13 @@ h3 {
 }
 
 .containernuestros {
-    text-align: center;
+    width: 100%;
     margin: 2%;
+    align-items: center;
+    justify-content: center;
 }
 
-/* mapa */
-iframe {
+.maparesponsive iframe {
 
     display: flex;
     border-radius: 20px;
@@ -58,5 +59,3 @@ iframe {
     width: 350px;
     height: 250px;
 }
-
-/*final mapa*/

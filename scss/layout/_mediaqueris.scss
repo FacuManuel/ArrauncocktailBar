@@ -1,5 +1,40 @@
-@media (max-width: 480px) {
+@media(max-width: 480px) {
 
-body {background-color: azure;}
+    .copryght {
+        font-size: 0.1rem;
+    }
 
+    .ulnav li {
+        list-style-type: none;
+        padding: 0.1px;
+        position: relative;
+        font-size: 0.4rem;
+        cursor: pointer;
+    }
+
+    img.galeriaindex {
+        width: 50%;
+    }
+
+    div.containernuestros {
+        width: 100%;
+    }
+
+    .logoftr .logofooter {
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-self: center;
+    }
+
+
+    .galeriaindex {
+        filter: grayscale(100%);
+        transition: all 2s ease-in-out;
+    }
+    
+    .galeriaindex:hover {
+        filter: grayscale(0%);
+        transition: all 0.5s ease-in-out;
+    }
 }

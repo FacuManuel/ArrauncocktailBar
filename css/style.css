@@ -10,8 +10,35 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
-    background-color: azure;
+  .copryght {
+    font-size: 0.1rem;
+  }
+  .ulnav li {
+    list-style-type: none;
+    padding: 0.1px;
+    position: relative;
+    font-size: 0.4rem;
+    cursor: pointer;
+  }
+  img.galeriaindex {
+    width: 50%;
+  }
+  div.containernuestros {
+    width: 100%;
+  }
+  .logoftr .logofooter {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-self: center;
+  }
+  .galeriaindex {
+    filter: grayscale(100%);
+    transition: all 2s ease-in-out;
+  }
+  .galeriaindex:hover {
+    filter: grayscale(0%);
+    transition: all 0.5s ease-in-out;
   }
 }
 .h2index {
@@ -59,12 +86,13 @@ h3 {
 }
 
 .containernuestros {
-  text-align: center;
+  width: 100%;
   margin: 2%;
+  align-items: center;
+  justify-content: center;
 }
 
-/* mapa */
-iframe {
+.maparesponsive iframe {
   display: flex;
   border-radius: 20px;
   border: 2px solid black;
@@ -72,7 +100,6 @@ iframe {
   height: 250px;
 }
 
-/*final mapa*/
 .h3clasicos {
   font-size: 3rem;
   text-align: center;
@@ -235,15 +262,28 @@ footer {
   margin-bottom: 0px;
 }
 
-.footer,
 .ulnav li {
   display: inline-block;
   list-style-type: none;
-  padding: 3px;
+  padding: 2px;
   position: relative;
-  padding-right: 3px;
-  font-size: 0.6rem;
+  padding-right: 0.1vh;
+  padding-left: 1vh;
+  font-size: 0.8rem;
   cursor: pointer;
+}
+
+.conjuntofooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.navfooter {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 .copryght {
@@ -251,31 +291,35 @@ footer {
   flex-direction: column;
   justify-items: center;
   text-align: end;
-  font-size: 0.5rem;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-right: 3vh;
+  font-size: 0.6rem;
+  margin-right: 1vh;
+}
+
+.buttonmail {
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid rgba(2, 221, 254, 0.546);
+  padding: 0.5px;
+  border-radius: 4px;
 }
 
 .pfooter {
   text-align: end;
 }
 
-.conjuntofooter {
-  display: flex;
-  justify-content: space-between;
+.pfooter2 {
+  text-align: end;
 }
 
-.navfooter {
+.logoftr {
   display: flex;
-  align-self: center;
 }
 
-.buttonmail {
-  text-shadow: 2px 2px 2px black;
-  border: 2px solid rgba(2, 221, 254, 0.546);
-  padding: 4px;
-  border-radius: 4px;
+.logofooter {
+  width: 50px;
+  border-style: outset;
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  object-fit: cover;
 }
 
 /*header*/
@@ -315,18 +359,18 @@ h1 {
 }
 
 .tituloh1 {
-  font-size: 1.7em;
+  font-size: 1.4em;
   color: rgb(255, 255, 255);
   text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+  text-align: center;
 }
 
 .logomenu {
   width: 80px;
-  background-color: rgb(49, 47, 47);
+  background-color: rgb(228, 220, 220);
   border-style: outset;
   border-color: rgb(255, 255, 255);
   object-fit: cover;
-  border-radius: 100%;
   padding: 2%;
   margin: 5%;
 }
@@ -334,16 +378,8 @@ h1 {
 .navmenu {
   display: flex;
   flex-direction: row;
-  margin-right: 3vh;
-}
-
-/*final header*/
-/*conjunto menu nav*/
-.navbox {
-  background-image: url(../imagenes/fondos/galaxia.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: right;
+  margin-right: 2vh;
+  text-align: end;
 }
 
 .navmenu ul li {
@@ -355,10 +391,9 @@ h1 {
   text-decoration: none;
   text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
-  padding: 0px;
   border: 2px solid black;
   border-radius: 5%;
   background-color: rgba(55, 56, 56, 0.566);
@@ -366,7 +401,6 @@ h1 {
   cursor: pointer;
 }
 
-/*fin conjunto menu nav*/
 body {
   width: 100%;
   background-image: url(../imagenes/fondos/arrauntoshan.jpg);
@@ -403,8 +437,6 @@ a:hover {
   text-shadow: 20px rgb(15, 15, 15);
 }
 
-/* fin enlaces */
-/*transicion y efecto de imagenes*/
 .galeriaindex {
   filter: grayscale(100%);
   transition: all 2s ease-in-out;
@@ -415,7 +447,6 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-/*final transicion y efecto de imagenes*/
 /* Enviar un Correo */
 .mailto {
   display: block;
@@ -424,8 +455,8 @@ a:hover {
 
 .buttonmail {
   text-shadow: 2px 2px 2px black;
-  border: 2px solid rgba(2, 221, 254, 0.546);
-  padding: 4px;
+  border: 1px solid rgba(2, 221, 254, 0.546);
+  padding: 1px;
   border-radius: 4px;
 }
 
