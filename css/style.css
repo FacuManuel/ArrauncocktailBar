@@ -9,6 +9,11 @@ body {
   min-width: 100%;
 }
 
+@media (max-width: 480px) {
+  body {
+    background-color: azure;
+  }
+}
 .h2index {
   font-size: 35px;
 }
