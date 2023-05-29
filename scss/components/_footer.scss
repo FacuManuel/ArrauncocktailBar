@@ -1,5 +1,5 @@
 footer {
-    width: 100%;
+    width: 99.3%;
     height: 100%;
     background-image: url(../imagenes/bartenderanime.jpg);
     background-size: cover;
@@ -12,17 +12,6 @@ footer {
 }
 
 
-.ulnav li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 2px;
-    position: relative;
-    padding-right: 0.1vh;
-    padding-left: 1vh;
-    font-size: 0.8rem;
-    cursor: pointer;
-
-}
 
 
 .conjuntofooter {
@@ -33,49 +22,66 @@ footer {
 
 
 
-}
+    .logoftr {
+        display: flex;
+    }
 
-.navfooter {
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    .logofooter {
+        width: 90px;
+        border-style: outset;
+        border: 1px solid;
+        border-color: rgb(255, 255, 255);
+        object-fit: cover;
+    }
 
-}
+    .navfooter {
+        display: flex;
+        align-self: center;
+        justify-content: center;
 
-.copryght {
-    display: inline-flex;
-    flex-direction: column;
-    justify-items: center;
-    text-align: end;
-    font-size: 0.6rem;
-    margin-right: 1vh;
+        .ulnav li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 2px;
+            position: relative;
+            padding-right: 0.1vh;
+            padding-left: 1vh;
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+    }
+
+    .copryght {
+        display: inline-flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: end;
+        font-size: 0.8rem;
+        margin-right: 1vh;
+
+        .pfooter {
+            text-align: end;
+            padding: 1%;
+        }
+
+        .pfooter2 {
+            text-align: end;
+            padding: 2%;
+
+
+
+        }
+    }
 
 
 }
 
 .buttonmail {
+    display: inline-block;
     text-shadow: 2px 2px 2px black;
     border: 1px solid rgba(2, 221, 254, 0.546);
-    padding: 0.5px;
+    padding: 1.5px;
+    margin-top: 2%;
     border-radius: 4px;
-}
-
-.pfooter {
-    text-align: end;
-}
-
-.pfooter2 {
-    text-align: end;
-}
-
-.logoftr {
-    display: flex;
-}
-
-.logofooter {
-    width: 50px;
-    border-style: outset;
-    border: 1px solid;
-    border-color: rgb(255, 255, 255);
-    object-fit: cover;
 }

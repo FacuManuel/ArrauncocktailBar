@@ -1,13 +1,21 @@
 .h3clasicos {
     font-size: 3rem;
     text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
+
+.description{margin-bottom: 6%;
+font-size: 20px;}
+
 
 .contenedorclasicos {
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .textococtelesclasicos {
@@ -17,12 +25,16 @@
     border: 2px solid black;
     padding: 5px;
     max-width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .listaclasicos {
     list-style: none;
     max-width: 100%;
     align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 
 }
 
@@ -30,4 +42,6 @@
     text-align: center;
     font-size: 2rem;
     text-shadow: 10px 5px 10px aquamarine;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }

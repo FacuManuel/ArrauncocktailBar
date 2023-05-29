@@ -4,9 +4,9 @@
   margin: 0;
 }
 
-body {
-  min-height: 100%;
-  min-width: 100%;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 480px) {
@@ -41,21 +41,36 @@ body {
     transition: all 0.5s ease-in-out;
   }
 }
-.h2index {
-  font-size: 35px;
-}
-
-.conjuntoinfoindex {
+.conjunto-info-index {
   display: flex;
   flex-direction: column;
+  padding: 1%;
 }
-
-ul li {
-  list-style: none;
+.conjunto-info-index .h2-index {
+  font-size: 30px;
+  margin-top: 0%;
+  margin-bottom: 2%;
 }
-
-h3 {
+.conjunto-info-index .h3index {
+  font-size: 23px;
+  margin-top: 1%;
+  margin-bottom: 1%;
   color: azure;
+}
+.conjunto-info-index .p-dir-index {
+  font-size: 18px;
+}
+.conjunto-info-index .p-tlf-index {
+  font-size: 18px;
+}
+.conjunto-info-index .p-dias-ind {
+  font-size: 18px;
+}
+.conjunto-info-index .p-dias2-ind {
+  font-size: 18px;
+}
+.conjunto-info-index ul li {
+  list-style: none;
 }
 
 .topfotos {
@@ -92,17 +107,30 @@ h3 {
   justify-content: center;
 }
 
-.maparesponsive iframe {
+.maparesponsive {
+  margin: 1%;
+  padding: 1%;
+}
+.maparesponsive .mparesponsive {
   display: flex;
   border-radius: 20px;
   border: 2px solid black;
   width: 350px;
   height: 250px;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .h3clasicos {
   font-size: 3rem;
   text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.description {
+  margin-bottom: 6%;
+  font-size: 20px;
 }
 
 .contenedorclasicos {
@@ -110,6 +138,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .textococtelesclasicos {
@@ -119,18 +149,24 @@ h3 {
   border: 2px solid black;
   padding: 5px;
   max-width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .listaclasicos {
   list-style: none;
   max-width: 100%;
   align-self: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .liclasicos {
   text-align: center;
   font-size: 2rem;
   text-shadow: 10px 5px 10px aquamarine;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .h2historia {
@@ -140,19 +176,23 @@ h3 {
 }
 
 .section1 {
+  font-size: 1.2rem;
   text-align: center;
   background-color: rgba(42, 2, 128, 0.449);
   border: 2px solid black;
   padding: 5px;
   text-shadow: 2px 2px 2px black;
+  margin: 2%;
 }
 
 .section2 {
+  font-size: 1.2rem;
   display: flex;
   text-align: center;
   background-color: rgba(42, 2, 128, 0.689);
   border: 2px solid black;
   text-shadow: 2px 2px 2px black;
+  margin: 2%;
 }
 
 .bushmills {
@@ -167,8 +207,9 @@ h3 {
 }
 
 .h4galeria {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
+  padding: 3%;
 }
 
 .containernuestros2 {
@@ -191,22 +232,95 @@ h3 {
   margin-left: 2px;
 }
 
-.h5telefono {
-  font-size: 20px;
-  padding: 0%;
-  margin: 0%;
+.divtlf {
+  padding: 1%;
+  margin: 1%;
 }
-
-.h6mailto {
-  font-size: 25px;
-  padding: 0%;
-  margin-top: 2%;
-  margin-bottom: 0%;
+.divtlf .h5telefono {
+  font-size: 22px;
+}
+.divtlf .ptelefono {
+  font-size: 15px;
 }
 
 .mailto2 {
   display: block;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+  margin: 1%;
+  padding: 1%;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+.mailto2 .h6mailto {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding-bottom: 1%;
+}
+.mailto2 .penvianos {
+  font-size: 1.1rem;
+}
+.mailto2 .pmail {
+  font-size: 1.1rem;
+}
+.mailto2 .buttonmail {
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid rgba(2, 221, 254, 0.546);
+  border-radius: 4px;
+}
+
+.maparesponsive {
+  padding-top: 1%;
+}
+.maparesponsive .mparesponsive {
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 350px;
+  height: 250px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.divintro {
+  padding: 1%;
+  margin: 1%;
+}
+.divintro .pintro {
+  font-size: 20px;
+}
+
+.divdir {
+  padding: 1%;
+  margin: 1%;
+}
+.divdir .pdir {
+  font-size: 18px;
+}
+.divdir .h4dir {
+  font-size: 22px;
+}
+
+.about {
+  padding: 1%;
+  margin: 1%;
+}
+.about .h3info {
+  font-size: 22px;
+}
+.about .ulinfo {
+  font-size: 16px;
+  list-style: none;
+}
+
+.divhorarios {
+  padding: 1%;
+  margin: 1%;
+}
+.divhorarios .h3horas {
+  font-size: 22px;
+}
+.divhorarios .phoras {
+  font-size: 18px;
 }
 
 .nuestrosh2 {
@@ -244,14 +358,15 @@ h3 {
 .containernuestrosgrid {
   width: 100%;
   text-align: center;
-  margin: 2%;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-  width: 100%;
+  width: 99.3%;
   height: 100%;
   background-image: url(../imagenes/bartenderanime.jpg);
   background-size: cover;
@@ -262,64 +377,61 @@ footer {
   margin-bottom: 0px;
 }
 
-.ulnav li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 2px;
-  position: relative;
-  padding-right: 0.1vh;
-  padding-left: 1vh;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
 .conjuntofooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.2rem;
 }
-
-.navfooter {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
-
-.copryght {
-  display: inline-flex;
-  flex-direction: column;
-  justify-items: center;
-  text-align: end;
-  font-size: 0.6rem;
-  margin-right: 1vh;
-}
-
-.buttonmail {
-  text-shadow: 2px 2px 2px black;
-  border: 1px solid rgba(2, 221, 254, 0.546);
-  padding: 0.5px;
-  border-radius: 4px;
-}
-
-.pfooter {
-  text-align: end;
-}
-
-.pfooter2 {
-  text-align: end;
-}
-
-.logoftr {
+.conjuntofooter .logoftr {
   display: flex;
 }
-
-.logofooter {
-  width: 50px;
+.conjuntofooter .logofooter {
+  width: 90px;
   border-style: outset;
   border: 1px solid;
   border-color: rgb(255, 255, 255);
   object-fit: cover;
+}
+.conjuntofooter .navfooter {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.conjuntofooter .navfooter .ulnav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 2px;
+  position: relative;
+  padding-right: 0.1vh;
+  padding-left: 1vh;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.conjuntofooter .copryght {
+  display: inline-flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: end;
+  font-size: 0.8rem;
+  margin-right: 1vh;
+}
+.conjuntofooter .copryght .pfooter {
+  text-align: end;
+  padding: 1%;
+}
+.conjuntofooter .copryght .pfooter2 {
+  text-align: end;
+  padding: 2%;
+}
+
+.buttonmail {
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid rgba(2, 221, 254, 0.546);
+  padding: 1.5px;
+  margin-top: 2%;
+  border-radius: 4px;
 }
 
 /*header*/
@@ -451,13 +563,6 @@ a:hover {
 .mailto {
   display: block;
   padding-bottom: 5%;
-}
-
-.buttonmail {
-  text-shadow: 2px 2px 2px black;
-  border: 1px solid rgba(2, 221, 254, 0.546);
-  padding: 1px;
-  border-radius: 4px;
 }
 
 .buttonmail2 {
