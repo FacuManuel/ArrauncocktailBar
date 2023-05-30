@@ -24,6 +24,7 @@ footer {
 
     .logoftr {
         display: flex;
+        grid-area: logo;
     }
 
     .logofooter {
@@ -38,6 +39,8 @@ footer {
         display: flex;
         align-self: center;
         justify-content: center;
+        grid-area: lista;
+         ;
 
         .ulnav li {
             display: inline-block;
@@ -59,6 +62,7 @@ footer {
         text-align: end;
         font-size: 0.8rem;
         margin-right: 1vh;
+        grid-area: texto;
 
         .pfooter {
             text-align: end;

@@ -4,36 +4,40 @@
     text-shadow: 2px 2px 2px black;
 }
 
-.section1 {
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: rgba(42, 2, 128, 0.449);
-    border: 2px solid black;
-    padding: 5px;
-    text-shadow: 2px 2px 2px black;
-    margin: 2%;
-}
+.divhistoria {
+    margin: 2% 15% 5% 15%;
 
-.section2 {
-    font-size: 1.2rem;
-    display: flex;
-    text-align: center;
-    background-color: rgba(42, 2, 128, 0.689);
-    border: 2px solid black;
-    text-shadow: 2px 2px 2px black;
-    margin: 2%;
-    
+    .section1 {
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: rgba(42, 2, 128, 0.449);
+        border: 2px solid black;
+        padding: 5px;
+        text-shadow: 2px 2px 2px black;
+
+
+    }
+
+    .section2 {
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+        background-color: rgba(42, 2, 128, 0.689);
+        border: 2px solid black;
+        text-shadow: 2px 2px 2px black;
+
+    }
 }
 
 
 .bushmills {
     object-fit: cover;
     text-align: center;
+    margin: 5%;
 
-}
-
-.imagenbushmills {
-    border: 3px solid black;
-    object-fit: cover;
-    width: 60%;
+    .imagenbushmills {
+        border: 3px solid black;
+        object-fit: cover;
+        width: 80%;
+    }
 }

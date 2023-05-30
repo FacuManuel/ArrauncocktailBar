@@ -54,23 +54,26 @@
     color: azure;
 }
 
-.galeriaindex {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 23%;
-    padding: 4px;
-    object-fit: cover;
-    background-color: black;
-    margin-left: 2px;
-
-}
 
 .containernuestros {
     width: 100%;
     margin: 2%;
     align-items: center;
     justify-content: center;
+
+    .galeriaindex {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 23%;
+        padding: 4px;
+        object-fit: cover;
+        background-color: black;
+        margin-left: 2px;
+        flex-flow: wrap;
+
+    }
+
 }
 
 .maparesponsive {

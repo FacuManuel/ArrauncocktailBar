@@ -10,36 +10,122 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  .copryght {
-    font-size: 0.1rem;
+  /* foooter */
+  footer {
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: repeat 2 1fr;
+    grid-template-areas: "logo logo texto" "lista lista texto";
   }
   .ulnav li {
-    list-style-type: none;
+    display: inline-flex;
     padding: 0.1px;
-    position: relative;
     font-size: 0.4rem;
     cursor: pointer;
   }
-  img.galeriaindex {
-    width: 50%;
-  }
-  div.containernuestros {
-    width: 100%;
-  }
   .logoftr .logofooter {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 40px;
     justify-content: center;
     align-self: center;
   }
-  .galeriaindex {
-    filter: grayscale(100%);
-    transition: all 2s ease-in-out;
+  /* final  footer*/
+  /* index */
+  .containernuestros {
+    display: flex;
+    flex-flow: wrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
-  .galeriaindex:hover {
-    filter: grayscale(0%);
-    transition: all 0.5s ease-in-out;
+  .containernuestros .galeriaindex {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 4px;
+    object-fit: cover;
+    background-color: black;
   }
+  .titulosfotosresponsive .topfotos {
+    margin-top: 10%;
+  }
+  .titulosfotosresponsive .ptopfotos {
+    margin-top: 10%;
+  }
+  .conjunto-info-index {
+    text-align: center;
+  }
+  .conjunto-info-index .h2-index {
+    padding-bottom: 5%;
+  }
+  .conjunto-info-index .p-tlf-index {
+    padding: 3%;
+  }
+  .conjunto-info-index .h3index {
+    padding: 5%;
+  }
+  /* final index */
+  /* clasicos */
+  .h3clasicos {
+    padding-bottom: 4%;
+  }
+  .listaclasicos {
+    padding-bottom: 10%;
+  }
+  .listaclasicos .liclasicos {
+    padding-top: 7%;
+  }
+  .listaclasicos .textococtelesclasicos {
+    font-size: 20px;
+  }
+  /* fin clasicos */
+  /*galeria*/
+  .containernuestros2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .containernuestros2 .galeriaphotos {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 4px;
+    object-fit: cover;
+    background-color: black;
+  }
+  /*fin galeria*/
+  /*historia*/
+  .h2historia {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+  }
+  /*fin historia*/
+  /*nuestros*/
+  .divnuestros .nuestrosh2 {
+    font-size: 25px;
+    padding-bottom: 2%;
+  }
+  .divnuestros .nuestrosh3 {
+    padding: 2%;
+  }
+  .divnuestros .containernuestrosgrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*fin nuestros*/
 }
 .conjunto-info-index {
   display: flex;
@@ -89,7 +175,13 @@ html, body {
   color: azure;
 }
 
-.galeriaindex {
+.containernuestros {
+  width: 100%;
+  margin: 2%;
+  align-items: center;
+  justify-content: center;
+}
+.containernuestros .galeriaindex {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -98,13 +190,7 @@ html, body {
   object-fit: cover;
   background-color: black;
   margin-left: 2px;
-}
-
-.containernuestros {
-  width: 100%;
-  margin: 2%;
-  align-items: center;
-  justify-content: center;
+  flex-flow: wrap;
 }
 
 .maparesponsive {
@@ -175,35 +261,35 @@ html, body {
   text-shadow: 2px 2px 2px black;
 }
 
-.section1 {
+.divhistoria {
+  margin: 2% 15% 5% 15%;
+}
+.divhistoria .section1 {
   font-size: 1.2rem;
   text-align: center;
   background-color: rgba(42, 2, 128, 0.449);
   border: 2px solid black;
   padding: 5px;
   text-shadow: 2px 2px 2px black;
-  margin: 2%;
 }
-
-.section2 {
+.divhistoria .section2 {
   font-size: 1.2rem;
   display: flex;
   text-align: center;
   background-color: rgba(42, 2, 128, 0.689);
   border: 2px solid black;
   text-shadow: 2px 2px 2px black;
-  margin: 2%;
 }
 
 .bushmills {
   object-fit: cover;
   text-align: center;
+  margin: 5%;
 }
-
-.imagenbushmills {
+.bushmills .imagenbushmills {
   border: 3px solid black;
   object-fit: cover;
-  width: 60%;
+  width: 80%;
 }
 
 .h4galeria {
@@ -385,6 +471,7 @@ footer {
 }
 .conjuntofooter .logoftr {
   display: flex;
+  grid-area: logo;
 }
 .conjuntofooter .logofooter {
   width: 90px;
@@ -397,6 +484,7 @@ footer {
   display: flex;
   align-self: center;
   justify-content: center;
+  grid-area: lista;
 }
 .conjuntofooter .navfooter .ulnav li {
   display: inline-block;
@@ -415,6 +503,7 @@ footer {
   text-align: end;
   font-size: 0.8rem;
   margin-right: 1vh;
+  grid-area: texto;
 }
 .conjuntofooter .copryght .pfooter {
   text-align: end;
