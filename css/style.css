@@ -4,18 +4,29 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
 @media (max-width: 480px) {
-  /* foooter */
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* foooter grid */
   footer {
     display: grid;
     grid-template-columns: 3 1fr;
-    grid-template-rows: repeat 2 1fr;
-    grid-template-areas: "logo logo texto" "lista lista texto";
+    grid-template-rows: repeat 3 1fr;
+    grid-template-areas: "logo texto texto" "lista lista texto";
   }
   .ulnav li {
     display: inline-flex;
@@ -126,6 +137,41 @@ html, body {
     flex-wrap: wrap;
   }
   /*fin nuestros*/
+  /*navbar grid*/
+  header .conjuntoheader {
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+  }
+  header .conjuntoheader .logoytituloresponsive {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0%;
+    margin: 0%;
+    font-size: 1.2rem;
+  }
+  header .conjuntoheader .logoytituloresponsive .logomenu {
+    width: 70px;
+  }
+  header .conjuntoheader .logoytituloresponsive .divtitulo .tituloh1 {
+    margin-right: 0, 3%;
+  }
+  header .conjuntoheader .navmenu {
+    display: inline-flex;
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+    text-align: center;
+  }
+  header .conjuntoheader .navmenu ul li a {
+    padding: 0%;
+    margin: 0%;
+  }
+  /* fin navbar grid*/
 }
 .conjunto-info-index {
   display: flex;
