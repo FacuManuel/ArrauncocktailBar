@@ -14,33 +14,87 @@
 
     /* foooter grid */
 
-    footer {
+    footer {max-width: 98%;
         display: grid;
-        grid-template-columns: (3 1fr);
-        grid-template-rows: repeat (3 1fr);
-        grid-template-areas:
-            "logo texto texto"
-            "lista lista texto";
+    
+
+        .conjuntofooter {
+            flex-direction: column;
+            display: grid;
+            grid-template-rows: repeat(1fr 1fr);
+            grid-template-columns: repeat(1fr 2fr 2fr);
+            grid-template-areas:
+                "item1 item3 item3"
+                "item2 item2";
+            justify-items: stretch;
+            align-items: stretch;
+
+            .item1
+
+            /*logo*/
+                {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 1;
+                grid-area: "item1";
+
+                .logofooter {
+                    width: 70px;
+                }
+            }
+
+
+
+            .item2
+
+            /*nav*/
+                {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                grid-area: "item3";
+
+                .ulnav li {
+                    font-size: 14px;
+                    margin-top: 7px;
+                    padding-top: 3%;
+                    text-align: center;
+                }
+
+            }
+
+
+
+            .item3
+
+            /*texto*/
+                {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-area: "item2";
+
+                .copryght {
+                    .pfooter2 {
+                        text-align: center;
+                    }
+
+                    .pfooter {
+                        text-align: center;
+                    }
+                }
+            }
+
+
+
+        }
+
     }
 
-
-    .ulnav li {
-        display: inline-flex;
-        padding: 0.1px;
-        font-size: 0.4rem;
-        cursor: pointer;
-    }
-
-    .logoftr .logofooter {
-        width: 20px;
-        height: 40px;
-        justify-content: center;
-        align-self: center;
-    }
-
-
-
-    /* final  footer*/
+    /* final  footer grid*/
 
     /* index */
     .containernuestros {
