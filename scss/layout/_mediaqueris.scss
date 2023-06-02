@@ -38,6 +38,8 @@
                 grid-row-start: 1;
                 grid-row-end: 1;
                 grid-area: "item1";
+                justify-self: center;
+                align-self: center;
 
                 .logofooter {
                     width: 70px;
@@ -59,8 +61,9 @@
                 .ulnav li {
                     font-size: 14px;
                     margin-top: 7px;
-                    padding-top: 3%;
+                    padding-top: 5%;
                     text-align: center;
+    
                 }
 
             }
@@ -77,13 +80,17 @@
                 grid-row-end: 3;
                 grid-area: "item2";
 
-                .copryght {
+                .copryght {padding-bottom: 10%;
                     .pfooter2 {
                         text-align: center;
+                        font-size: 14px;
+                     
                     }
 
                     .pfooter {
                         text-align: center;
+                        font-size: 14px;
+                        
                     }
                 }
             }

@@ -41,6 +41,8 @@ body {
     grid-row-start: 1;
     grid-row-end: 1;
     grid-area: "item1";
+    justify-self: center;
+    align-self: center;
   }
   footer .conjuntofooter .item1 .logofooter {
     width: 70px;
@@ -55,7 +57,7 @@ body {
   footer .conjuntofooter .item2 .ulnav li {
     font-size: 14px;
     margin-top: 7px;
-    padding-top: 3%;
+    padding-top: 5%;
     text-align: center;
   }
   footer .conjuntofooter .item3 {
@@ -65,11 +67,16 @@ body {
     grid-row-end: 3;
     grid-area: "item2";
   }
+  footer .conjuntofooter .item3 .copryght {
+    padding-bottom: 10%;
+  }
   footer .conjuntofooter .item3 .copryght .pfooter2 {
     text-align: center;
+    font-size: 14px;
   }
   footer .conjuntofooter .item3 .copryght .pfooter {
     text-align: center;
+    font-size: 14px;
   }
   /* final  footer grid*/
   /* index */
