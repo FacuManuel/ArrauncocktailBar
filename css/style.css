@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family=Rubik+Charcos&display=swap");
 * {
   border: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
   overflow-x: hidden;
 }
 
+/* usar funte: font-family: 'Rubik Puddles', cursiva;*/
 @media (max-width: 480px) {
   * {
     border: 0;
@@ -197,15 +199,19 @@ body {
   }
   header .conjuntoheader .logoytituloresponsive .divtitulo .tituloh1 {
     margin-right: 0, 3%;
+    font-size: 1.5em;
   }
-  header .conjuntoheader .navmenu {
+  header .conjuntoheader .divnavmenu {
+    text-align: center;
+  }
+  header .conjuntoheader .divnavmenu .navmenu {
     display: inline-flex;
     margin: 0%;
     padding: 0%;
     font-size: 14px;
     text-align: center;
   }
-  header .conjuntoheader .navmenu ul li a {
+  header .conjuntoheader .divnavmenu .navmenu ul li a {
     padding: 0%;
     margin: 0%;
   }
@@ -638,10 +644,11 @@ h1 {
   color: rgb(255, 255, 255);
   text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
   padding-left: 30px;
+  font-family: "Rubik Puddles", cursiva;
 }
 
 .tituloh1 {
-  font-size: 1.4em;
+  font-size: 3em;
   color: rgb(255, 255, 255);
   text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
   text-align: center;
@@ -657,30 +664,36 @@ h1 {
   margin: 5%;
 }
 
-.navmenu {
+.divnavmenu .navmenu {
   display: flex;
   flex-direction: row;
   margin-right: 2vh;
   text-align: end;
 }
-
-.navmenu ul li {
+.divnavmenu .navmenu ul li {
   list-style-type: none;
   display: inline-flex;
 }
-
-.navmenu ul li a {
+.divnavmenu .navmenu ul li a {
   text-decoration: none;
   text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
   color: white;
   font-size: 0.9rem;
-  text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
-  border: 2px solid black;
-  border-radius: 5%;
-  background-color: rgba(55, 56, 56, 0.566);
   margin-left: 1vh;
   cursor: pointer;
+}
+.divnavmenu .navmenu ul li a a {
+  text-decoration: none;
+}
+.divnavmenu .navmenu ul li a a:link {
+  color: rgb(253, 253, 253);
+}
+.divnavmenu .navmenu ul li a a:visited {
+  color: rgb(250, 252, 250);
+}
+.divnavmenu .navmenu ul li a a:hover {
+  color: rgb(0, 225, 255);
+  text-shadow: 20px rgb(15, 15, 15);
 }
 
 body {
@@ -691,8 +704,8 @@ body {
   object-fit: cover;
   position: sticky;
   color: azure;
-  font-family: sans-serif, arial;
   display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
@@ -701,7 +714,6 @@ main {
   margin-right: 2vh;
 }
 
-/* Enlaces */
 a {
   text-decoration: none;
 }

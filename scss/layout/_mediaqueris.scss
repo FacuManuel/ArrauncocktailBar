@@ -14,9 +14,10 @@
 
     /* foooter grid */
 
-    footer {max-width: 98%;
+    footer {
+        max-width: 98%;
         display: grid;
-    
+
 
         .conjuntofooter {
             flex-direction: column;
@@ -63,7 +64,7 @@
                     margin-top: 7px;
                     padding-top: 5%;
                     text-align: center;
-    
+
                 }
 
             }
@@ -80,17 +81,19 @@
                 grid-row-end: 3;
                 grid-area: "item2";
 
-                .copryght {padding-bottom: 10%;
+                .copryght {
+                    padding-bottom: 10%;
+
                     .pfooter2 {
                         text-align: center;
                         font-size: 14px;
-                     
+
                     }
 
                     .pfooter {
                         text-align: center;
                         font-size: 14px;
-                        
+
                     }
                 }
             }
@@ -250,20 +253,26 @@
             .divtitulo {
                 .tituloh1 {
                     margin-right: 0, 3%;
+                    font-size: 1.5em;
                 }
             }
         }
 
-        .navmenu {
-            display: inline-flex;
-            margin: 0%;
-            padding: 0%;
-            font-size: 14px;
+        .divnavmenu {
             text-align: center;
 
-            ul li a {
-                padding: 0%;
+            .navmenu {
+                display: inline-flex;
                 margin: 0%;
+                padding: 0%;
+                font-size: 14px;
+                text-align: center;
+
+
+                ul li a {
+                    padding: 0%;
+                    margin: 0%;
+                }
             }
         }
 
