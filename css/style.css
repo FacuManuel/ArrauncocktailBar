@@ -7,8 +7,14 @@
 
 html,
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: auto;
+}
+
+--degrade {
+  background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
+  transition: 1s;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* usar funte: font-family: 'Rubik Puddles', cursiva;*/
@@ -216,6 +222,9 @@ body {
     margin: 0%;
   }
   /* fin navbar grid*/
+  .coctelesxnombre {
+    text-align: center;
+  }
 }
 .conjunto-info-index {
   display: flex;
@@ -226,12 +235,20 @@ body {
   font-size: 30px;
   margin-top: 0%;
   margin-bottom: 2%;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .conjunto-info-index .h3index {
   font-size: 23px;
   margin-top: 1%;
   margin-bottom: 1%;
   color: azure;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .conjunto-info-index .p-dir-index {
   font-size: 18px;
@@ -302,6 +319,10 @@ body {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 1%;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .description {
@@ -336,13 +357,38 @@ body {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.listaclasicos h5:hover {
+  background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
+  transition: 1s;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 .liclasicos {
   text-align: center;
   font-size: 2rem;
-  text-shadow: 10px 5px 10px aquamarine;
+  text-shadow: 10px 5px 10px rgba(243, 247, 246, 0.183);
   margin-top: 1%;
   margin-bottom: 1%;
+  background-image: linear-gradient(rgb(139, 33, 245), rgb(252, 249, 249));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.coctelesxnombre {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.coctelesxnombre ul li {
+  list-style: none;
+  display: inline-flex;
+  padding: 1.4%;
+  border: 0.5px solid black;
+  background-image: linear-gradient(rgba(119, 0, 255, 0.317), rgba(15, 1, 1, 0.505));
+  margin-top: 1%;
 }
 
 .h2historia {
@@ -542,7 +588,7 @@ body {
 }
 
 footer {
-  width: 99.3%;
+  width: auto;
   height: 100%;
   background-image: url(../imagenes/bartenderanime.jpg);
   background-size: cover;
@@ -629,14 +675,11 @@ header {
   background-image: url(../imagenes/fondos/galaxia.webp);
   background-repeat: repeat;
   object-fit: cover;
-  position: fixed;
-  border: 2px solid black;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999;
 }
 
 h1 {
@@ -652,6 +695,10 @@ h1 {
   color: rgb(255, 255, 255);
   text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
   text-align: center;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .logomenu {
@@ -676,28 +723,32 @@ h1 {
 }
 .divnavmenu .navmenu ul li a {
   text-decoration: none;
+}
+.divnavmenu .navmenu ul li a:link {
+  color: rgb(253, 253, 253);
+}
+.divnavmenu .navmenu ul li a:visited {
+  color: rgb(250, 252, 250);
+}
+.divnavmenu .navmenu ul li a:hover {
+  color: rgb(0, 225, 255);
+  text-shadow: 20px rgb(15, 15, 15);
+}
+.divnavmenu .navmenu ul li a {
+  text-decoration: none;
   text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
   color: white;
   font-size: 0.9rem;
   margin-left: 1vh;
   cursor: pointer;
 }
-.divnavmenu .navmenu ul li a a {
-  text-decoration: none;
-}
-.divnavmenu .navmenu ul li a a:link {
-  color: rgb(253, 253, 253);
-}
-.divnavmenu .navmenu ul li a a:visited {
-  color: rgb(250, 252, 250);
-}
-.divnavmenu .navmenu ul li a a:hover {
-  color: rgb(0, 225, 255);
-  text-shadow: 20px rgb(15, 15, 15);
+
+html {
+  width: auto;
 }
 
 body {
-  width: 100%;
+  width: auto;
   background-image: url(../imagenes/fondos/arrauntoshan.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -709,7 +760,8 @@ body {
 }
 
 main {
-  margin-top: 15vh;
+  width: auto;
+  margin-top: 6vh;
   margin-left: 2vh;
   margin-right: 2vh;
 }

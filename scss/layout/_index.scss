@@ -7,6 +7,10 @@
         font-size: 30px;
         margin-top: 0%;
         margin-bottom: 2%;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
     }
 
     .h3index {
@@ -14,6 +18,10 @@
         margin-top: 1%;
         margin-bottom: 1%;
         color: azure;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
     }
 
     .p-dir-index {
@@ -41,8 +49,8 @@
 .topfotos {
     font-size: 34px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    text-align: center;
-}
+    text-align: center;}
+ 
 
 .ptopfotos {
     font-size: 22px;

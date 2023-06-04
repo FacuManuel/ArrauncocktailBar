@@ -3,10 +3,16 @@
     text-align: center;
     margin-top: 2%;
     margin-bottom: 1%;
+    background-image: linear-gradient(aqua, white);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
-.description{margin-bottom: 6%;
-font-size: 20px;}
+.description {
+    margin-bottom: 6%;
+    font-size: 20px;
+}
 
 
 .contenedorclasicos {
@@ -36,12 +42,44 @@ font-size: 20px;}
     margin-top: 1%;
     margin-bottom: 1%;
 
+    h5:hover {
+        background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
+        transition: 1s;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+
 }
 
 .liclasicos {
     text-align: center;
     font-size: 2rem;
-    text-shadow: 10px 5px 10px aquamarine;
+    text-shadow: 10px 5px 10px rgba(243, 247, 246, 0.183);
     margin-top: 1%;
     margin-bottom: 1%;
+    background-image: linear-gradient(rgb(139, 33, 245), rgb(252, 249, 249));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.coctelesxnombre {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    text-align: center;
+
+    ul li {
+        list-style: none;
+        display: inline-flex;
+        padding: 1.4%;
+        border: 0.5px solid black;
+        background-image: linear-gradient(rgba(119, 0, 255, 0.317), rgba(15, 1, 1, 0.505));
+        margin-top: 1%;
+
+    }
+
+
+
 }
