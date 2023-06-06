@@ -5,18 +5,7 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: auto;
-}
-
---degrade {
-  background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
-  transition: 1s;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
+/*sirve con imagenes tambien!*/
 /* usar funte: font-family: 'Rubik Puddles', cursiva;*/
 @media (max-width: 480px) {
   * {
@@ -27,15 +16,20 @@ body {
   html,
   body {
     max-width: 100%;
-    overflow-x: hidden;
+  }
+  main {
+    width: auto;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   /* foooter grid */
   footer {
-    max-width: 98%;
+    max-width: 100%;
     display: grid;
   }
   footer .conjuntofooter {
-    flex-direction: column;
+    flex-direction: row;
     display: grid;
     grid-template-rows: repeat(1fr 1fr);
     grid-template-columns: repeat(1fr 2fr 2fr);
@@ -54,6 +48,8 @@ body {
   }
   footer .conjuntofooter .item1 .logofooter {
     width: 70px;
+    align-items: center;
+    justify-content: center;
   }
   footer .conjuntofooter .item2 {
     grid-column-start: 1;
@@ -62,11 +58,13 @@ body {
     grid-row-end: 2;
     grid-area: "item3";
   }
-  footer .conjuntofooter .item2 .ulnav li {
-    font-size: 14px;
-    margin-top: 7px;
-    padding-top: 5%;
+  footer .conjuntofooter .item2 .ulnav {
     text-align: center;
+    margin-top: 6%;
+  }
+  footer .conjuntofooter .item2 .ulnav .ulnav li {
+    padding: 0%;
+    font-size: 14px;
   }
   footer .conjuntofooter .item3 {
     grid-column-start: 2;
@@ -76,15 +74,20 @@ body {
     grid-area: "item2";
   }
   footer .conjuntofooter .item3 .copryght {
-    padding-bottom: 10%;
+    flex-direction: column-reverse;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    justify-content: center;
+    align-items: center;
   }
   footer .conjuntofooter .item3 .copryght .pfooter2 {
-    text-align: center;
-    font-size: 14px;
+    text-align: end;
+    padding: 0%;
   }
   footer .conjuntofooter .item3 .copryght .pfooter {
-    text-align: center;
-    font-size: 14px;
+    text-align: end;
+    padding: 0%;
   }
   /* final  footer grid*/
   /* index */
@@ -93,8 +96,6 @@ body {
     flex-flow: wrap;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    margin: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
   }
@@ -140,6 +141,9 @@ body {
   .listaclasicos .textococtelesclasicos {
     font-size: 20px;
   }
+  .coctelesxnombre {
+    text-align: center;
+  }
   /* fin clasicos */
   /*galeria*/
   .containernuestros2 {
@@ -172,7 +176,7 @@ body {
   /*fin historia*/
   /*nuestros*/
   .divnuestros .nuestrosh2 {
-    font-size: 25px;
+    font-size: 45px;
     padding-bottom: 2%;
   }
   .divnuestros .nuestrosh3 {
@@ -222,7 +226,23 @@ body {
     margin: 0%;
   }
   /* fin navbar grid*/
-  .coctelesxnombre {
+  /*nosotros*/
+  .divintro {
+    text-align: center;
+  }
+  .about {
+    text-align: center;
+  }
+  .divhorarios {
+    text-align: center;
+  }
+  .divtlf {
+    text-align: center;
+  }
+  .divdir {
+    text-align: center;
+  }
+  .mailto2 {
     text-align: center;
   }
 }
@@ -237,8 +257,8 @@ body {
   margin-bottom: 2%;
   background-image: linear-gradient(aqua, white);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .conjunto-info-index .h3index {
   font-size: 23px;
@@ -247,8 +267,8 @@ body {
   color: azure;
   background-image: linear-gradient(aqua, white);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .conjunto-info-index .p-dir-index {
   font-size: 18px;
@@ -268,36 +288,39 @@ body {
 
 .topfotos {
   font-size: 34px;
-  text-shadow: 5px 5px 5px rgb(0, 0, 0);
   text-align: center;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .ptopfotos {
   font-size: 22px;
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
   text-align: center;
+  color: rgb(171, 250, 250);
 }
 
 .titulosfotosresponsive {
   color: azure;
+  margin-bottom: 4%;
 }
 
 .containernuestros {
   width: 100%;
-  margin: 2%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 .containernuestros .galeriaindex {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   max-width: 23%;
-  padding: 4px;
+  padding: 6px;
   object-fit: cover;
-  background-color: black;
-  margin-left: 2px;
-  flex-flow: wrap;
+  border-radius: 5%;
 }
 
 .maparesponsive {
@@ -315,14 +338,15 @@ body {
 }
 
 .h3clasicos {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 1%;
   background-image: linear-gradient(aqua, white);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .description {
@@ -342,7 +366,7 @@ body {
 .textococtelesclasicos {
   background-color: rgba(42, 2, 128, 0.449);
   text-align: center;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: shadow;
   border: 2px solid black;
   padding: 5px;
   max-width: 100%;
@@ -360,8 +384,8 @@ body {
 .listaclasicos h5:hover {
   background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
   transition: 1s;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .liclasicos {
@@ -372,8 +396,8 @@ body {
   margin-bottom: 1%;
   background-image: linear-gradient(rgb(139, 33, 245), rgb(252, 249, 249));
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .coctelesxnombre {
@@ -394,11 +418,14 @@ body {
 .h2historia {
   font-size: 3rem;
   text-align: center;
-  text-shadow: 2px 2px 2px black;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .divhistoria {
-  margin: 2% 15% 5% 15%;
+  margin: 2% 10% 5% 10%;
 }
 .divhistoria .section1 {
   font-size: 1.2rem;
@@ -423,15 +450,20 @@ body {
   margin: 5%;
 }
 .bushmills .imagenbushmills {
-  border: 3px solid black;
+  border: 3px solid rgb(171, 250, 250);
   object-fit: cover;
   width: 80%;
 }
 
 .h4galeria {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
   text-align: center;
-  padding: 3%;
+  padding: 1%;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .containernuestros2 {
@@ -450,7 +482,7 @@ body {
   max-width: 21%;
   padding: 4px;
   object-fit: cover;
-  background-color: black;
+  background-color: rgb(171, 250, 250);
   margin-left: 2px;
 }
 
@@ -460,6 +492,10 @@ body {
 }
 .divtlf .h5telefono {
   font-size: 22px;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .divtlf .ptelefono {
   font-size: 15px;
@@ -470,19 +506,26 @@ body {
   padding-bottom: 2%;
   margin: 1%;
   padding: 1%;
-  text-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
 .mailto2 .h6mailto {
   font-size: 1.5rem;
   margin-top: 2%;
   margin-bottom: 0%;
   padding-bottom: 1%;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .mailto2 .penvianos {
   font-size: 1.1rem;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(171, 250, 250);
 }
 .mailto2 .pmail {
   font-size: 1.1rem;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(171, 250, 250);
 }
 .mailto2 .buttonmail {
   text-shadow: 2px 2px 2px black;
@@ -509,6 +552,8 @@ body {
 }
 .divintro .pintro {
   font-size: 20px;
+  text-shadow: shadow;
+  color: rgb(171, 250, 250);
 }
 
 .divdir {
@@ -517,9 +562,14 @@ body {
 }
 .divdir .pdir {
   font-size: 18px;
+  text-shadow: 2px 2px 2px black;
 }
 .divdir .h4dir {
   font-size: 22px;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .about {
@@ -528,6 +578,10 @@ body {
 }
 .about .h3info {
   font-size: 22px;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .about .ulinfo {
   font-size: 16px;
@@ -540,19 +594,30 @@ body {
 }
 .divhorarios .h3horas {
   font-size: 22px;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .divhorarios .phoras {
   font-size: 18px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .nuestrosh2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .nuestrosh3 {
   text-align: center;
   font-size: 1.2rem;
+  color: rgb(171, 250, 250);
 }
 
 .cardscocteles {
@@ -611,8 +676,8 @@ footer {
 .conjuntofooter .logofooter {
   width: 90px;
   border-style: outset;
-  border: 1px solid;
-  border-color: rgb(255, 255, 255);
+  border: 1px solid rgb(171, 250, 250);
+  border-color: rgb(171, 250, 250);
   object-fit: cover;
 }
 .conjuntofooter .navfooter {
@@ -630,6 +695,9 @@ footer {
   font-size: 1rem;
   cursor: pointer;
 }
+.conjuntofooter .navfooter .ulnav li a {
+  color: rgb(171, 250, 250);
+}
 .conjuntofooter .copryght {
   display: inline-flex;
   flex-direction: column;
@@ -637,6 +705,7 @@ footer {
   text-align: end;
   font-size: 0.8rem;
   margin-right: 1vh;
+  color: rgb(171, 250, 250);
 }
 .conjuntofooter .copryght .pfooter {
   text-align: end;
@@ -697,15 +766,13 @@ h1 {
   text-align: center;
   background-image: linear-gradient(aqua, white);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .logomenu {
   width: 80px;
-  background-color: rgb(228, 220, 220);
-  border-style: outset;
-  border-color: rgb(255, 255, 255);
+  background-color: rgb(171, 250, 250);
   object-fit: cover;
   padding: 2%;
   margin: 5%;
@@ -725,10 +792,10 @@ h1 {
   text-decoration: none;
 }
 .divnavmenu .navmenu ul li a:link {
-  color: rgb(253, 253, 253);
+  color: rgb(171, 250, 250);
 }
 .divnavmenu .navmenu ul li a:visited {
-  color: rgb(250, 252, 250);
+  color: rgb(171, 250, 250);
 }
 .divnavmenu .navmenu ul li a:hover {
   color: rgb(0, 225, 255);
@@ -737,14 +804,14 @@ h1 {
 .divnavmenu .navmenu ul li a {
   text-decoration: none;
   text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
-  color: white;
+  color: rgb(171, 250, 250);
   font-size: 0.9rem;
   margin-left: 1vh;
   cursor: pointer;
 }
 
 html {
-  width: auto;
+  width: 100%;
 }
 
 body {
@@ -756,14 +823,14 @@ body {
   position: sticky;
   color: azure;
   display: block;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 main {
   width: auto;
-  margin-top: 6vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
+  margin-top: 3vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
 }
 
 a {

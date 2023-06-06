@@ -1,12 +1,14 @@
 .h3clasicos {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: $grafitti;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 1%;
     background-image: linear-gradient(aqua, white);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
+    
 }
 
 .description {
@@ -27,8 +29,8 @@
 .textococtelesclasicos {
     background-color: rgba(42, 2, 128, 0.449);
     text-align: center;
-    text-shadow: 2px 2px 2px black;
-    border: 2px solid black;
+    text-shadow: shadow;
+    border: $border;
     padding: 5px;
     max-width: 100%;
     margin-top: 1%;
@@ -45,8 +47,8 @@
     h5:hover {
         background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
         transition: 1s;
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
     }
 
 
@@ -60,8 +62,8 @@
     margin-bottom: 1%;
     background-image: linear-gradient(rgb(139, 33, 245), rgb(252, 249, 249));
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .coctelesxnombre {

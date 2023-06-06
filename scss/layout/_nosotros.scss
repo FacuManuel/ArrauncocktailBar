@@ -5,6 +5,10 @@
 
     .h5telefono {
         font-size: 22px;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
     .ptelefono {
@@ -17,26 +21,34 @@
     padding-bottom: 2%;
     margin: 1%;
     padding: 1%;
-    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+   
 
     .h6mailto {
         font-size: 1.5rem;
         margin-top: 2%;
         margin-bottom: 0%;
         padding-bottom: 1%;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
 
     }
 
     .penvianos {
         font-size: 1.1rem;
+        text-shadow: $shadow;
+        color: $main-color;
     }
 
     .pmail {
         font-size: 1.1rem;
+        text-shadow: $shadow;
+        color: $main-color;
     }
 
     .buttonmail {
-        text-shadow: 2px 2px 2px black;
+        text-shadow: $shadow;
         border: 1px solid rgba(2, 221, 254, 0.546);
         border-radius: 4px;
 
@@ -67,6 +79,8 @@
 
     .pintro {
         font-size: 20px;
+        text-shadow: shadow;
+        color: $main-color;
     }
 }
 
@@ -77,11 +91,17 @@
 
     .pdir {
         font-size: 18px;
+        text-shadow: $shadow;
+        
 
     }
 
     .h4dir {
         font-size: 22px;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
 
     }
 
@@ -94,6 +114,10 @@
 
     .h3info {
         font-size: 22px;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
 
     }
 
@@ -110,9 +134,14 @@
 
     .h3horas {
         font-size: 22px;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
     .phoras {
         font-size: 18px;
+        text-shadow: $shadow;
     }
 }

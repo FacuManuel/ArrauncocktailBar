@@ -24,14 +24,14 @@ footer {
 
     .logoftr {
         display: flex;
-       
+
     }
 
     .logofooter {
         width: 90px;
         border-style: outset;
-        border: 1px solid;
-        border-color: rgb(255, 255, 255);
+        border: 1px solid $main-color;
+        border-color: $main-color;
         object-fit: cover;
     }
 
@@ -39,7 +39,7 @@ footer {
         display: flex;
         align-self: center;
         justify-content: center;
-         ;
+
 
         .ulnav li {
             display: inline-block;
@@ -51,6 +51,9 @@ footer {
             font-size: 1rem;
             cursor: pointer;
 
+            a {
+                color: $main-color;
+            }
         }
     }
 
@@ -61,6 +64,7 @@ footer {
         text-align: end;
         font-size: 0.8rem;
         margin-right: 1vh;
+        color: $main-color;
 
         .pfooter {
             text-align: end;
@@ -81,7 +85,7 @@ footer {
 
 .buttonmail {
     display: inline-block;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: $shadow;
     border: 1px solid rgba(2, 221, 254, 0.546);
     padding: 1.5px;
     margin-top: 2%;

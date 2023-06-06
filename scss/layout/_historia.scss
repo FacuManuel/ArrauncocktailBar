@@ -2,22 +2,25 @@
 .h2historia {
     font-size: 3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    background-image: linear-gradient(aqua, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
  
 
 }
 
 .divhistoria {
-    margin: 2% 15% 5% 15%;
+    margin: 2% 10% 5% 10%;
  
 
     .section1 {
         font-size: 1.2rem;
         text-align: center;
         background-color: rgba(42, 2, 128, 0.449);
-        border: 2px solid black;
+        border: $border;
         padding: 5px;
-        text-shadow: 2px 2px 2px black;
+        text-shadow: $shadow;
 
 
     }
@@ -27,8 +30,8 @@
         display: flex;
         text-align: center;
         background-color: rgba(42, 2, 128, 0.689);
-        border: 2px solid black;
-        text-shadow: 2px 2px 2px black;
+        border: $border;
+        text-shadow: $shadow;
 
     }
 }
@@ -40,7 +43,7 @@
     margin: 5%;
 
     .imagenbushmills {
-        border: 3px solid black;
+        border: 3px solid $main-color;
         object-fit: cover;
         width: 80%;
     }

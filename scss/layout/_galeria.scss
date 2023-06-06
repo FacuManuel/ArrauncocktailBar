@@ -1,7 +1,12 @@
 .h4galeria {
-    font-size:2.5rem;
+    font-size: 4rem;
+    font-family: $grafitti;
     text-align: center;
-    padding: 3%;
+    padding: 1%;
+    background-image: linear-gradient(aqua, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .containernuestros2 {
@@ -10,7 +15,10 @@
     display: flex;
 }
 
-.grid-container {width: 100%;}
+.grid-container {
+    width: 100%;
+  
+}
 
 .galeriaphotos {
     justify-content: center;
@@ -18,7 +26,7 @@
     max-width: 21%;
     padding: 4px;
     object-fit: cover;
-    background-color: black;
+    background-color: $main-color;
     margin-left: 2px;
 
 }

@@ -9,8 +9,8 @@
         margin-bottom: 2%;
         background-image: linear-gradient(aqua, white);
         color: transparent;
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
     }
 
     .h3index {
@@ -20,8 +20,8 @@
         color: azure;
         background-image: linear-gradient(aqua, white);
         color: transparent;
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
     }
 
     .p-dir-index {
@@ -48,39 +48,42 @@
 
 .topfotos {
     font-size: 34px;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    text-align: center;}
- 
+    text-align: center;
+    background-image: linear-gradient(aqua, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;}
+
 
 .ptopfotos {
     font-size: 22px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     text-align: center;
+    color: $main-color;
 }
 
 .titulosfotosresponsive {
     color: azure;
+    margin-bottom: 4%;
 }
 
 
 .containernuestros {
     width: 100%;
-    margin: 2%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
 
     .galeriaindex {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
         max-width: 23%;
-        padding: 4px;
+        padding: 6px;
         object-fit: cover;
-        background-color: black;
-        margin-left: 2px;
-        flex-flow: wrap;
-
+        border-radius: 5%;
     }
+
 
 }
 
@@ -92,7 +95,7 @@
 
         display: flex;
         border-radius: 20px;
-        border: 2px solid black;
+        border: $border;
         width: 350px;
         height: 250px;
         margin-top: 3%;

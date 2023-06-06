@@ -1,6 +1,9 @@
---degrade {
-    background-image: linear-gradient(rgb(0, 207, 253), rgb(252, 249, 249));
-    transition: 1s;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+
+$main-color: rgb(171, 250, 250);
+$minimun-size: 14px;
+$main-font: arial;
+$grafitti: 'Rubik Puddles', cursiva;
+$shadow: 2px 2px 2px black;
+$border: 2px solid black;
+
+/*sirve con imagenes tambien!*/

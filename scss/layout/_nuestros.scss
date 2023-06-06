@@ -1,11 +1,17 @@
 .nuestrosh2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: $grafitti;
+    background-image: linear-gradient(aqua, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .nuestrosh3 {
     text-align: center;
     font-size: 1.2rem;
+    color: $main-color;
 }
 .cardscocteles {
     display: grid;

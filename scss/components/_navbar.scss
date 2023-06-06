@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 
@@ -36,7 +35,7 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
     padding-left: 30px;
-    font-family: 'Rubik Puddles', cursiva;
+    font-family: $grafitti;
 
 
 }
@@ -48,17 +47,15 @@ h1 {
     text-align: center;
     background-image: linear-gradient(aqua, white);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 
 
 .logomenu {
     width: 80px;
-    background-color: rgb(228, 220, 220);
-    border-style: outset;
-    border-color: rgb(255, 255, 255);
+    background-color: $main-color;
     object-fit: cover;
     padding: 2%;
     margin: 5%;
@@ -91,11 +88,11 @@ h1 {
         }
 
         a:link {
-            color: rgb(253, 253, 253);
+            color: $main-color;
         }
 
         a:visited {
-            color: rgb(250, 252, 250);
+            color: $main-color;
         }
 
         a:hover {
@@ -111,7 +108,7 @@ h1 {
 
         text-decoration: none;
         text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
-        color: white;
+        color: $main-color;
         font-size: 0.9rem;
         margin-left: 1vh;
         cursor: pointer;
