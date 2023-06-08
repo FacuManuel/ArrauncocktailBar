@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family=Rubik+Charcos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 * {
   border: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 
 /*sirve con imagenes tambien!*/
 /* usar funte: font-family: 'Rubik Puddles', cursiva;*/
+/* usar funte: font-family: 'Dancing Script', cursive;*/
 @media (max-width: 480px) {
   * {
     border: 0;
@@ -129,19 +131,22 @@
   }
   /* final index */
   /* clasicos */
-  .h3clasicos {
+  main .h1clasicos {
+    font-size: 3rem;
+  }
+  main .h3clasicos {
     padding-bottom: 4%;
   }
-  .listaclasicos {
+  main .listaclasicos {
     padding-bottom: 10%;
   }
-  .listaclasicos .liclasicos {
+  main .listaclasicos .liclasicos {
     padding-top: 7%;
   }
-  .listaclasicos .textococtelesclasicos {
+  main .listaclasicos .textococtelesclasicos {
     font-size: 20px;
   }
-  .coctelesxnombre {
+  main .coctelesxnombre {
     text-align: center;
   }
   /* fin clasicos */
@@ -168,10 +173,10 @@
   }
   /*fin galeria*/
   /*historia*/
-  .h2historia {
+  main .h2historia {
     font-size: 3rem;
+    font-family: "Rubik Puddles", cursiva;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
   }
   /*fin historia*/
   /*nuestros*/
@@ -191,6 +196,7 @@
   header .conjuntoheader {
     display: grid;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin: 0%;
     padding: 0%;
@@ -270,6 +276,24 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+.conjunto-info-index .h4index {
+  font-size: 23px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(171, 250, 250);
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.conjunto-info-index .p-d-index {
+  font-size: 23px;
+  color: rgb(171, 250, 250);
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .conjunto-info-index .p-dir-index {
   font-size: 18px;
 }
@@ -287,19 +311,21 @@
 }
 
 .topfotos {
-  font-size: 34px;
+  font-size: 4rem;
   text-align: center;
   background-image: linear-gradient(aqua, white);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  font-family: "Rubik Puddles", cursiva;
 }
 
 .ptopfotos {
-  font-size: 22px;
+  font-size: 2rem;
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
   text-align: center;
   color: rgb(171, 250, 250);
+  font-family: "Dancing Script", cursive;
 }
 
 .titulosfotosresponsive {
@@ -337,7 +363,7 @@
   margin-bottom: 3%;
 }
 
-.h3clasicos {
+.h1clasicos {
   font-size: 4rem;
   font-family: "Rubik Puddles", cursiva;
   text-align: center;
@@ -347,6 +373,7 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  padding-top: 2%;
 }
 
 .description {
@@ -416,12 +443,14 @@
 }
 
 .h2historia {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
   text-align: center;
   background-image: linear-gradient(aqua, white);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  padding-top: 2%;
 }
 
 .divhistoria {
@@ -464,6 +493,7 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  padding-top: 2%;
 }
 
 .containernuestros2 {
@@ -549,9 +579,11 @@
 .divintro {
   padding: 1%;
   margin: 1%;
+  padding-top: 2%;
+  font-family: "Dancing Script", cursive;
 }
 .divintro .pintro {
-  font-size: 20px;
+  font-size: 2rem;
   text-shadow: shadow;
   color: rgb(171, 250, 250);
 }
@@ -612,12 +644,15 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  padding-top: 2%;
 }
 
 .nuestrosh3 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: rgb(171, 250, 250);
+  padding-top: 2%;
+  font-family: "Dancing Script", cursive;
 }
 
 .cardscocteles {

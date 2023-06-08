@@ -71,7 +71,7 @@
                 .ulnav {
                     text-align: center;
                     margin-top: 6%;
-                    
+
 
 
                     .ulnav li {
@@ -180,25 +180,33 @@
     /* final index */
 
     /* clasicos */
-    .h3clasicos {
-        padding-bottom: 4%;
-    }
-
-    .listaclasicos {
-        padding-bottom: 10%;
-
-        .liclasicos {
-            padding-top: 7%;
+    main {
+        .h1clasicos {
+            font-size: 3rem;
         }
 
-        .textococtelesclasicos {
-            font-size: 20px;
+        .h3clasicos {
+            padding-bottom: 4%;
+        }
+
+        .listaclasicos {
+            padding-bottom: 10%;
+
+            .liclasicos {
+                padding-top: 7%;
+            }
+
+            .textococtelesclasicos {
+                font-size: 20px;
+            }
+        }
+
+        .coctelesxnombre {
+            text-align: center;
         }
     }
 
-    .coctelesxnombre {
-        text-align: center;
-    }
+
 
     /* fin clasicos */
 
@@ -229,10 +237,12 @@
     /*fin galeria*/
 
     /*historia*/
-    .h2historia {
-        font-size: 3rem;
-        text-align: center;
-        text-shadow: 2px 2px 2px black;
+    main {
+        .h2historia {font-size: 3rem;
+            font-family: $grafitti;
+            text-align: center;
+        }
+
     }
 
     /*fin historia*/
@@ -261,6 +271,7 @@
     header .conjuntoheader {
         display: grid;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         margin: 0%;
         padding: 0%;

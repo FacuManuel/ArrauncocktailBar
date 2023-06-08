@@ -1,5 +1,5 @@
-.h3clasicos {
-    font-size: 4rem;
+.h1clasicos {
+    font-size: $title-size;
     font-family: $grafitti;
     text-align: center;
     margin-top: 2%;
@@ -8,6 +8,7 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    padding-top: 2%;
     
 }
 

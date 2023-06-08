@@ -76,9 +76,11 @@
 .divintro {
     padding: 1%;
     margin: 1%;
+    padding-top: 2%;
+    font-family: $pegadita;
 
     .pintro {
-        font-size: 20px;
+        font-size: 2rem;
         text-shadow: shadow;
         color: $main-color;
     }

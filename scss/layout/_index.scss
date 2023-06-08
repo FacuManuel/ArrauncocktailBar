@@ -24,6 +24,26 @@
         background-clip: text;
     }
 
+    .h4index {
+        font-size: 23px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        color: $main-color;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .p-d-index {
+        font-size: 23px;
+        color: $main-color;
+        background-image: linear-gradient(aqua, white);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
     .p-dir-index {
         font-size: 18px;
     }
@@ -47,19 +67,22 @@
 }
 
 .topfotos {
-    font-size: 34px;
+    font-size: $title-size;
     text-align: center;
     background-image: linear-gradient(aqua, white);
     color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;}
+    background-clip: text;
+    font-family: $grafitti;
+}
 
 
 .ptopfotos {
-    font-size: 22px;
+    font-size: 2rem;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     text-align: center;
     color: $main-color;
+    font-family: $pegadita;
 }
 
 .titulosfotosresponsive {

@@ -1,11 +1,13 @@
 
 .h2historia {
-    font-size: 3rem;
+    font-size: $title-size;
+    font-family: $grafitti;
     text-align: center;
     background-image: linear-gradient(aqua, white);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    padding-top: 2%;
  
 
 }

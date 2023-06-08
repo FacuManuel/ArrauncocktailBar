@@ -1,18 +1,22 @@
 .nuestrosh2 {
     text-align: center;
-    font-size: 4rem;
+    font-size: $title-size;
     font-family: $grafitti;
     background-image: linear-gradient(aqua, white);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    padding-top: 2%;
 }
 
 .nuestrosh3 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: $main-color;
+    padding-top: 2%;
+    font-family: $pegadita;
 }
+
 .cardscocteles {
     display: grid;
     width: 400px;
