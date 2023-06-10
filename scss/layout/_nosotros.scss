@@ -5,7 +5,8 @@
 
     .h5telefono {
         font-size: 22px;
-        @extend .degrade;
+         /*@extend .degrade;*/
+    @include degrade;
     }
 
     .ptelefono {
@@ -18,14 +19,15 @@
     padding-bottom: 2%;
     margin: 1%;
     padding: 1%;
-   
+
 
     .h6mailto {
         font-size: 1.5rem;
         margin-top: 2%;
         margin-bottom: 0%;
         padding-bottom: 1%;
-        @extend .degrade;
+         /*@extend .degrade;*/
+    @include degrade;
 
     }
 
@@ -88,13 +90,14 @@
     .pdir {
         font-size: 18px;
         text-shadow: $shadow;
-        
+
 
     }
 
     .h4dir {
         font-size: 22px;
-        @extend .degrade;
+         /*@extend .degrade;*/
+    @include degrade;
 
     }
 
@@ -107,7 +110,8 @@
 
     .h3info {
         font-size: 22px;
-        @extend .degrade;
+        /*@extend .degrade;*/
+        @include degrade;
 
     }
 
@@ -124,7 +128,8 @@
 
     .h3horas {
         font-size: 22px;
-        @extend .degrade;
+        /*@extend .degrade;*/
+        @include degrade;
     }
 
     .phoras {

@@ -3,7 +3,8 @@
     font-size: $title-size;
     font-family: $grafitti;
     text-align: center;
-    @extend .degrade;
+     /*@extend .degrade;*/
+     @include degrade;
     padding-top: 2%;
  
 

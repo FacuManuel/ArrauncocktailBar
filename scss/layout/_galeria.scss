@@ -3,7 +3,8 @@
     font-family: $grafitti;
     text-align: center;
     padding: 1%;
-    @extend .degrade;
+     /*@extend .degrade;*/
+     @include degrade;
     padding-top: 2%;
 }
 

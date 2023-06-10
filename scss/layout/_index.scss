@@ -70,7 +70,8 @@
     font-size: $title-size;
     text-align: center;
     font-family: $grafitti;
-
+   /*@extend .degrade;*/
+   @include degrade;
 }
 
 

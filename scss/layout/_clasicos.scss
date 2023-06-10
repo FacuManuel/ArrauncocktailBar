@@ -4,9 +4,9 @@
     text-align: center;
     margin-top: 2%;
     margin-bottom: 1%;
-    @extend .degrade;
     padding-top: 2%;
-    
+    /*@extend .degrade;*/
+    @include degrade;
 }
 
 .description {
@@ -43,7 +43,8 @@
     margin-bottom: 1%;
 
     h5:hover {
-        @extend .degrade;
+         /*@extend .degrade;*/
+    @include degrade;
     }
 
 
@@ -55,7 +56,8 @@
     text-shadow: 10px 5px 10px rgba(243, 247, 246, 0.183);
     margin-top: 1%;
     margin-bottom: 1%;
-    @extend .degrade;
+     /*@extend .degrade;*/
+     @include degrade;
 }
 
 .coctelesxnombre {

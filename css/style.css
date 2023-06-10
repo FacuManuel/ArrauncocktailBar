@@ -1,18 +1,944 @@
-/* Error: The target selector was not found.
- * Use "@extend .degrade !optional" to avoid this error.
- *   ,
- * 7 |     @extend .degrade;
- *   |     ^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\_clasicos.scss 7:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend .degrade !optional" to avoid this error.\a   \2577 \a 7 \2502      @extend .degrade;\d\a   \2502      ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_clasicos.scss 7:5  root stylesheet';
+@import url("https://fonts.googleapis.com/css2? family=Rubik+Charcos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
+
+/*sirve con imagenes tambien!. */
+.titulos {
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* usar funte: font-family: 'Rubik Puddles', cursiva;*/
+/* usar funte: font-family: 'Dancing Script', cursive;*/
+@media (max-width: 480px) {
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body {
+    max-width: 100%;
+  }
+  main {
+    width: auto;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* foooter grid */
+  footer {
+    max-width: 100%;
+    display: grid;
+  }
+  footer .conjuntofooter {
+    flex-direction: row;
+    display: grid;
+    grid-template-rows: repeat(1fr 1fr);
+    grid-template-columns: repeat(1fr 2fr 2fr);
+    grid-template-areas: "item1 item3 item3" "item2 item2";
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  footer .conjuntofooter .item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-area: "item1";
+    justify-self: center;
+    align-self: center;
+  }
+  footer .conjuntofooter .item1 .logofooter {
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .conjuntofooter .item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-area: "item3";
+  }
+  footer .conjuntofooter .item2 .ulnav {
+    text-align: center;
+    margin-top: 6%;
+  }
+  footer .conjuntofooter .item2 .ulnav .ulnav li {
+    padding: 0%;
+    font-size: 14px;
+  }
+  footer .conjuntofooter .item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-area: "item2";
+  }
+  footer .conjuntofooter .item3 .copryght {
+    flex-direction: column-reverse;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .conjuntofooter .item3 .copryght .pfooter2 {
+    text-align: end;
+    padding: 0%;
+  }
+  footer .conjuntofooter .item3 .copryght .pfooter {
+    text-align: end;
+    padding: 0%;
+  }
+  /* final  footer grid*/
+  /* index */
+  .containernuestros {
+    display: flex;
+    flex-flow: wrap;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .containernuestros .galeriaindex {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 4px;
+    object-fit: cover;
+    background-color: black;
+  }
+  .titulosfotosresponsive {
+    filter: grayscale(50%);
+  }
+  .titulosfotosresponsive .topfotos {
+    margin-top: 0%;
+  }
+  .titulosfotosresponsive .ptopfotos {
+    margin-top: 0%;
+  }
+  .conjunto-info-index {
+    text-align: center;
+  }
+  .conjunto-info-index .h2-index {
+    padding-bottom: 5%;
+  }
+  .conjunto-info-index .p-tlf-index {
+    padding: 3%;
+  }
+  .conjunto-info-index .h3index {
+    padding: 5%;
+  }
+  /* final index */
+  /* clasicos */
+  main .h1clasicos {
+    font-size: 3rem;
+  }
+  main .h3clasicos {
+    padding-bottom: 4%;
+  }
+  main .listaclasicos {
+    padding-bottom: 10%;
+  }
+  main .listaclasicos .liclasicos {
+    padding-top: 7%;
+  }
+  main .listaclasicos .textococtelesclasicos {
+    font-size: 20px;
+  }
+  main .coctelesxnombre {
+    text-align: center;
+  }
+  /* fin clasicos */
+  /*galeria*/
+  .containernuestros2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .containernuestros2 .galeriaphotos {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 4px;
+    object-fit: cover;
+    background-color: black;
+  }
+  /*fin galeria*/
+  /*historia*/
+  main .h2historia {
+    font-size: 3rem;
+    font-family: "Rubik Puddles", cursiva;
+    text-align: center;
+  }
+  /*fin historia*/
+  /*nuestros*/
+  .divnuestros .nuestrosh2 {
+    font-size: 45px;
+    padding-bottom: 2%;
+  }
+  .divnuestros .nuestrosh3 {
+    padding: 2%;
+  }
+  .divnuestros .containernuestrosgrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*fin nuestros*/
+  /*navbar grid*/
+  header .conjuntoheader {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+  }
+  header .conjuntoheader .logoytituloresponsive {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0%;
+    margin: 0%;
+    font-size: 1.2rem;
+  }
+  header .conjuntoheader .logoytituloresponsive .logomenu {
+    width: 70px;
+  }
+  header .conjuntoheader .logoytituloresponsive .divtitulo .tituloh1 {
+    margin-right: 0, 3%;
+    font-size: 1.5em;
+  }
+  header .conjuntoheader .divnavmenu {
+    text-align: center;
+  }
+  header .conjuntoheader .divnavmenu .navmenu {
+    display: inline-flex;
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+    text-align: center;
+  }
+  header .conjuntoheader .divnavmenu .navmenu ul li a {
+    padding: 0%;
+    margin: 0%;
+  }
+  /* fin navbar grid*/
+  /*nosotros*/
+  .divintro {
+    text-align: center;
+  }
+  .about {
+    text-align: center;
+  }
+  .divhorarios {
+    text-align: center;
+  }
+  .divtlf {
+    text-align: center;
+  }
+  .divdir {
+    text-align: center;
+  }
+  .mailto2 {
+    text-align: center;
+  }
+}
+.conjunto-info-index {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.conjunto-info-index .h2-index {
+  font-size: 30px;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.conjunto-info-index .h3index {
+  font-size: 23px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: azure;
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.conjunto-info-index .h4index {
+  font-size: 23px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(171, 250, 250);
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.conjunto-info-index .p-d-index {
+  font-size: 23px;
+  color: rgb(171, 250, 250);
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.conjunto-info-index .p-dir-index {
+  font-size: 18px;
+}
+.conjunto-info-index .p-tlf-index {
+  font-size: 18px;
+}
+.conjunto-info-index .p-dias-ind {
+  font-size: 18px;
+}
+.conjunto-info-index .p-dias2-ind {
+  font-size: 18px;
+}
+.conjunto-info-index ul li {
+  list-style: none;
+}
+
+.topfotos {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Rubik Puddles", cursiva;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.ptopfotos {
+  font-size: 2rem;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(171, 250, 250);
+  font-family: "Dancing Script", cursive;
+}
+
+.titulosfotosresponsive {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  color: azure;
+  margin-bottom: 4%;
+  background-image: url(/imagenes/fondos/hola.png);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(15%);
+}
+
+.containernuestros {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+.containernuestros .galeriaindex {
+  max-width: 23%;
+  padding: 6px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.maparesponsive {
+  margin: 1%;
+  padding: 1%;
+}
+.maparesponsive .mparesponsive {
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 350px;
+  height: 250px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.h1clasicos {
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding-top: 2%;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.description {
+  margin-bottom: 6%;
+  font-size: 20px;
+}
+
+.contenedorclasicos {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.textococtelesclasicos {
+  background-color: rgba(42, 2, 128, 0.449);
+  text-align: center;
+  text-shadow: shadow;
+  border: 2px solid black;
+  padding: 5px;
+  max-width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.listaclasicos {
+  list-style: none;
+  max-width: 100%;
+  align-self: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.listaclasicos h5:hover {
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.liclasicos {
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 10px 5px 10px rgba(243, 247, 246, 0.183);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.coctelesxnombre {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.coctelesxnombre ul li {
+  list-style: none;
+  display: inline-flex;
+  padding: 1.4%;
+  border: 0.5px solid black;
+  background-image: linear-gradient(rgba(119, 0, 255, 0.317), rgba(15, 1, 1, 0.505));
+  margin-top: 1%;
+}
+
+.h2historia {
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
+  text-align: center;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 2%;
+}
+
+.divhistoria {
+  margin: 2% 10% 5% 10%;
+}
+.divhistoria .section1 {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(42, 2, 128, 0.449);
+  border: 2px solid black;
+  padding: 5px;
+  text-shadow: 2px 2px 2px black;
+}
+.divhistoria .section2 {
+  font-size: 1.2rem;
+  display: flex;
+  text-align: center;
+  background-color: rgba(42, 2, 128, 0.689);
+  border: 2px solid black;
+  text-shadow: 2px 2px 2px black;
+}
+
+.bushmills {
+  object-fit: cover;
+  text-align: center;
+  margin: 5%;
+}
+.bushmills .imagenbushmills {
+  border: 3px solid rgb(171, 250, 250);
+  object-fit: cover;
+  width: 80%;
+}
+
+.h4galeria {
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
+  text-align: center;
+  padding: 1%;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 2%;
+}
+
+.containernuestros2 {
+  text-align: center;
+  margin: 2%;
+  display: flex;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.galeriaphotos {
+  justify-content: center;
+  align-items: center;
+  max-width: 21%;
+  padding: 4px;
+  object-fit: cover;
+  background-color: rgb(171, 250, 250);
+  margin-left: 2px;
+}
+
+.divtlf {
+  padding: 1%;
+  margin: 1%;
+}
+.divtlf .h5telefono {
+  font-size: 22px;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.divtlf .ptelefono {
+  font-size: 15px;
+}
+
+.mailto2 {
+  display: block;
+  padding-bottom: 2%;
+  margin: 1%;
+  padding: 1%;
+}
+.mailto2 .h6mailto {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding-bottom: 1%;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.mailto2 .penvianos {
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(171, 250, 250);
+}
+.mailto2 .pmail {
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(171, 250, 250);
+}
+.mailto2 .buttonmail {
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid rgba(2, 221, 254, 0.546);
+  border-radius: 4px;
+}
+
+.maparesponsive {
+  padding-top: 1%;
+}
+.maparesponsive .mparesponsive {
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 350px;
+  height: 250px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.divintro {
+  padding: 1%;
+  margin: 1%;
+  padding-top: 2%;
+  font-family: "Dancing Script", cursive;
+}
+.divintro .pintro {
+  font-size: 2rem;
+  text-shadow: shadow;
+  color: rgb(171, 250, 250);
+}
+
+.divdir {
+  padding: 1%;
+  margin: 1%;
+}
+.divdir .pdir {
+  font-size: 18px;
+  text-shadow: 2px 2px 2px black;
+}
+.divdir .h4dir {
+  font-size: 22px;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.about {
+  padding: 1%;
+  margin: 1%;
+}
+.about .h3info {
+  font-size: 22px;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.about .ulinfo {
+  font-size: 16px;
+  list-style: none;
+}
+
+.divhorarios {
+  padding: 1%;
+  margin: 1%;
+}
+.divhorarios .h3horas {
+  font-size: 22px;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.divhorarios .phoras {
+  font-size: 18px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.nuestrosh2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Rubik Puddles", cursiva;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 2%;
+}
+
+.nuestrosh3 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(171, 250, 250);
+  padding-top: 2%;
+  font-family: "Dancing Script", cursive;
+}
+
+.cardscocteles {
+  display: grid;
+  width: 400px;
+  background-color: black;
+  padding: 3px;
+  margin: 5px 5px 5px 5px;
+  border: 0;
+  object-fit: cover;
+  text-align: center;
+}
+
+.cardsbody img {
+  width: 100%;
+  object-fit: cover;
+  position: sticky;
+}
+
+.cardsbody {
+  display: inline-block;
+  width: 100%;
+}
+
+.containernuestrosgrid {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: auto;
+  height: 100%;
+  background-image: url(../imagenes/bartenderanime.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position-x: 50%;
+  background-position-y: 80%;
+  border: 5px solid black;
+  margin-bottom: 0px;
+}
+
+.conjuntofooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+}
+.conjuntofooter .logoftr {
+  display: flex;
+}
+.conjuntofooter .logofooter {
+  width: 90px;
+  border-style: outset;
+  border: 1px solid rgb(171, 250, 250);
+  border-color: rgb(171, 250, 250);
+  object-fit: cover;
+}
+.conjuntofooter .navfooter {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.conjuntofooter .navfooter .ulnav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 2px;
+  position: relative;
+  padding-right: 0.1vh;
+  padding-left: 1vh;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.conjuntofooter .navfooter .ulnav li a {
+  color: rgb(171, 250, 250);
+}
+.conjuntofooter .copryght {
+  display: inline-flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: end;
+  font-size: 0.8rem;
+  margin-right: 1vh;
+  color: rgb(171, 250, 250);
+}
+.conjuntofooter .copryght .pfooter {
+  text-align: end;
+  padding: 1%;
+}
+.conjuntofooter .copryght .pfooter2 {
+  text-align: end;
+  padding: 2%;
+}
+
+.buttonmail {
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid rgba(2, 221, 254, 0.546);
+  padding: 1.5px;
+  margin-top: 2%;
+  border-radius: 4px;
+}
+
+/*header*/
+.conjuntoheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logoytituloresponsive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header {
+  display: block;
+  background-image: url(../imagenes/fondos/galaxia.webp);
+  background-repeat: repeat;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+  padding-left: 30px;
+  font-family: "Rubik Puddles", cursiva;
+}
+
+.tituloh1 {
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
+  text-align: center;
+  /*@extend .degrade;*/
+  background-image: linear-gradient(aqua, white);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.logomenu {
+  width: 80px;
+  background-color: rgb(171, 250, 250);
+  object-fit: cover;
+  padding: 2%;
+  margin: 5%;
+}
+
+.divnavmenu .navmenu {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2vh;
+  text-align: end;
+}
+.divnavmenu .navmenu ul li {
+  list-style-type: none;
+  display: inline-flex;
+}
+.divnavmenu .navmenu ul li a {
+  text-decoration: none;
+}
+.divnavmenu .navmenu ul li a:link {
+  color: rgb(171, 250, 250);
+}
+.divnavmenu .navmenu ul li a:visited {
+  color: rgb(171, 250, 250);
+}
+.divnavmenu .navmenu ul li a:hover {
+  color: rgb(0, 225, 255);
+  text-shadow: 20px rgb(15, 15, 15);
+}
+.divnavmenu .navmenu ul li a {
+  text-decoration: none;
+  text-shadow: 5px 4px 10px rgba(0, 229, 255, 0.596);
+  color: rgb(171, 250, 250);
+  font-size: 0.9rem;
+  margin-left: 1vh;
+  cursor: pointer;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: auto;
+  background-image: url(../imagenes/fondos/arrauntoshan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: sticky;
+  color: azure;
+  display: block;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+main {
+  width: auto;
+  margin-top: 3vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(253, 253, 253);
+}
+
+a:visited {
+  color: rgb(250, 252, 250);
+}
+
+a:hover {
+  color: rgb(0, 225, 255);
+  text-shadow: 20px rgb(15, 15, 15);
+}
+
+.galeriaindex {
+  filter: grayscale(100%);
+  transition: all 2s ease-in-out;
+}
+
+.galeriaindex:hover {
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Enviar un Correo */
+.mailto {
+  display: block;
+  padding-bottom: 5%;
+}
+
+.buttonmail2 {
+  text-shadow: 2px 2px 2px black;
+  border: 2px solid rgba(2, 221, 254, 0.546);
+  padding: 1px;
+  border-radius: 4px;
+}
+
+/* Final de Enviar un Correo. */
+
+/*# sourceMappingURL=style.css.map */
