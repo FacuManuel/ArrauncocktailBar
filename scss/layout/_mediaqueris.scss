@@ -152,13 +152,19 @@
     }
 
     .titulosfotosresponsive {
+        filter: grayscale(50%);
+
+
+
+
         .topfotos {
-            margin-top: 10%;
+            margin-top: 0%;
         }
 
         .ptopfotos {
-            margin-top: 10%;
+            margin-top: 0%;
         }
+
     }
 
     .conjunto-info-index {
@@ -176,6 +182,9 @@
             padding: 5%;
         }
     }
+
+
+
 
     /* final index */
 
@@ -238,7 +247,8 @@
 
     /*historia*/
     main {
-        .h2historia {font-size: 3rem;
+        .h2historia {
+            font-size: 3rem;
             font-family: $grafitti;
             text-align: center;
         }

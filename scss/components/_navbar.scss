@@ -45,10 +45,7 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: 10px 1px 10px rgba(12, 215, 201, 0.692);
     text-align: center;
-    background-image: linear-gradient(aqua, white);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    @extend .degrade;
 }
 
 
@@ -73,7 +70,7 @@ h1 {
         flex-direction: row;
         margin-right: 2vh;
         text-align: end;
-    
+
 
 
 
@@ -83,7 +80,7 @@ h1 {
     .navmenu ul li {
         list-style-type: none;
         display: inline-flex;
-    
+
 
         a {
             text-decoration: none;
