@@ -5,8 +5,8 @@
 
     .h5telefono {
         font-size: 22px;
-         /*@extend .degrade;*/
-    @include degrade;
+        /*@extend .degrade;*/
+        @include degrade;
     }
 
     .ptelefono {
@@ -26,8 +26,8 @@
         margin-top: 2%;
         margin-bottom: 0%;
         padding-bottom: 1%;
-         /*@extend .degrade;*/
-    @include degrade;
+        /*@extend .degrade;*/
+        @include degrade;
 
     }
 
@@ -96,8 +96,8 @@
 
     .h4dir {
         font-size: 22px;
-         /*@extend .degrade;*/
-    @include degrade;
+        /*@extend .degrade;*/
+        @include degrade;
 
     }
 
