@@ -1,27 +1,86 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:link {
-    color: rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
 }
 
 a:visited {
-    color: rgb(250, 252, 250);
+  color: rgb(250, 252, 250);
 }
 
 a:hover {
-    color: rgb(0, 225, 255);
-    text-shadow: 20px rgb(15, 15, 15)
+  color: rgb(0, 225, 255);
+  text-shadow: 20px rgb(15, 15, 15)
 }
 
 
 .galeriaindex {
-    filter: grayscale(100%);
-    transition: all 2s ease-in-out;
+  filter: grayscale(100%);
+  transition: all 2s ease-in-out;
 }
 
 .galeriaindex:hover {
-    filter: grayscale(0%);
-    transition: all 0.5s ease-in-out;
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*pruebas*/
+.tituloh1 {
+  text-transform: uppercase;
+  position: relative;
+
+  text-shadow: 0.05em 0 0 rgba(0, 174, 255, 0.75),
+    -0.025em -0.05em 0 rgba(255, 255, 255, 0.75),
+    0.025em 0.05em 0 rgba(65, 65, 66, 0.75);
+
+  animation: glitch 400ms infinite;
+}
+
+.tituloh1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tituloh1 span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+
+.tituloh1 span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(0, 174, 255, 0.75),
+      -0.05em -0.025em 0 rgba(255, 255, 255, 0.75),
+      -0.025em 0.05em 0 rgba(65, 65, 66, 0.75);
+  }
+
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 174, 255, 0.75),
+      0.025em 0.025em 0 rgba(255, 255, 255, 0.75),
+      -0.05em -0.05em 0 rgba(65, 65, 66, 0.75);
+  }
+
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(0, 174, 255, 0.75),
+      0.05em 0 0 rgba(255, 255, 255, 0.75),
+      0 -0.05em 0 rgba(65, 65, 66, 0.75);
+  }
+
+  100% {
+    text-shadow: -0.025em 0 0 rgba(0, 174, 255, 0.75),
+      -0.025em -0.025em 0 rgba(255, 255, 255, 0.75),
+      -0.025em -0.05em 0 rgba(65, 65, 66, 0.75);
+  }
 }

@@ -1,24 +1,7 @@
-html {
-    width: 100%;
-}
+
 
 body {
-    width: auto;
-    background-image: url(../imagenes/fondos/arrauntoshan.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    position: sticky;
-    color: azure;
-    display: block;
-    font-family: Verdana, Tahoma, sans-serif;
-
+    @extend .fondo;
 }
 
 
-main {
-    width: auto;
-    margin-top: 3vh;
-    margin-left: 1vh;
-    margin-right:1vh;
-}

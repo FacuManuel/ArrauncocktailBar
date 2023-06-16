@@ -6,24 +6,11 @@
     }
 
 
-    html,
-    body {
-        max-width: 100%;
-
-    }
-
-    main {
-        width: auto;
-        margin-top: 0%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
     /* foooter grid */
 
     footer {
-        max-width: 100%;
         display: grid;
+
 
 
         .conjuntofooter {
@@ -34,25 +21,26 @@
             grid-template-areas:
                 "item1 item3 item3"
                 "item2 item2";
-            justify-items: stretch;
+            justify-items: center;
             align-items: stretch;
 
             .item1
 
             /*logo*/
                 {
+        
                 grid-column-start: 1;
                 grid-column-end: 1;
                 grid-row-start: 1;
                 grid-row-end: 1;
                 grid-area: "item1";
-                justify-self: center;
-                align-self: center;
+                
 
                 .logofooter {
                     width: 70px;
-                    align-items: center;
-                    justify-content: center;
+                    margin-left: 20%;
+                    margin-top: 15%;
+                   
                 }
             }
 
@@ -98,8 +86,9 @@
                 grid-area: "item2";
 
                 .copryght {
+
                     flex-direction: column-reverse;
-                    margin: 0%;
+                    margin-top: 2%;
                     padding: 0%;
                     border: 0%;
                     justify-content: center;
@@ -109,22 +98,23 @@
 
 
                     .pfooter2 {
-                        text-align: end;
+                        text-align: center;
                         padding: 0%;
 
                     }
 
                     .pfooter {
-                        text-align: end;
+                        text-align: center;
                         padding: 0%;
 
                     }
                 }
-            }
+        
 
 
-
+            
         }
+       
 
     }
 
@@ -148,11 +138,11 @@
             padding: 4px;
             object-fit: cover;
             background-color: black;
+            filter: grayscale(0%);
         }
     }
 
     .titulosfotosresponsive {
-        filter: grayscale(50%);
 
 
 
@@ -183,12 +173,17 @@
         }
     }
 
+    .maparesponsive {
+        justify-content: center;
+    }
 
 
 
     /* final index */
 
+
     /* clasicos */
+
     main {
         .h1clasicos {
             font-size: 3rem;
@@ -270,6 +265,7 @@
         .containernuestrosgrid {
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 15%;
 
         }
     }
@@ -353,4 +349,4 @@
         text-align: center;
     }
 
-}
+}}

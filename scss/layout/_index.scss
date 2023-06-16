@@ -2,15 +2,17 @@
     display: flex;
     flex-direction: column;
     padding: 1%;
+    text-align: center;
 
     .h2-index {
-        font-size: 30px;
+        font-size: 3rem;
         margin-top: 0%;
         margin-bottom: 2%;
         background-image: linear-gradient(aqua, white);
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+        font-family: $titulo;
     }
 
     .h3index {
@@ -22,6 +24,8 @@
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+        font-family: $titulo;
+
     }
 
     .h4index {
@@ -33,6 +37,8 @@
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+        font-family: $titulo;
+
     }
 
     .p-d-index {
@@ -42,6 +48,7 @@
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+        font-family: $titulo;
     }
 
     .p-dir-index {
@@ -69,9 +76,8 @@
 .topfotos {
     font-size: $title-size;
     text-align: center;
-    font-family: $grafitti;
-   /*@extend .degrade;*/
-   @include degrade;
+    font-family: $titulo;
+    color: azure;
 }
 
 
@@ -79,22 +85,22 @@
     font-size: 2rem;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     text-align: center;
-    color: $main-color;
+    color: white;
     font-family: $pegadita;
+
 }
 
 .titulosfotosresponsive {
     margin-top: 5%;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width:auto;
+    width: auto;
     color: azure;
     margin-bottom: 4%;
-    background-image: url(/imagenes/fondos/hola.png);
-    background-size: cover;
+    background-image: url("../../imagenes/fondos/hola.png");
     background-position: center;
-    filter: grayscale(15%);
-    }
+    border: $border;
+}
 
 
 .containernuestros {
@@ -108,17 +114,20 @@
 
     .galeriaindex {
         max-width: 23%;
-        padding: 6px;
         object-fit: cover;
         border-radius: 5%;
+        border: $border2;
+        margin: 4px;
     }
 
 
 }
 
 .maparesponsive {
+    display: flex;
     margin: 1%;
     padding: 1%;
+    justify-content: center;
 
     .mparesponsive {
 
@@ -129,6 +138,7 @@
         height: 250px;
         margin-top: 3%;
         margin-bottom: 3%;
+
 
     }
 }

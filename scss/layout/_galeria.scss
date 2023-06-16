@@ -1,10 +1,10 @@
 .h4galeria {
     font-size: $title-size;
-    font-family: $grafitti;
+    font-family: $titulo;
     text-align: center;
     padding: 1%;
-     /*@extend .degrade;*/
-     @include degrade;
+    /*@extend .degrade;*/
+    @include degrade;
     padding-top: 2%;
 }
 
@@ -12,20 +12,20 @@
     text-align: center;
     margin: 2%;
     display: flex;
-}
 
-.grid-container {
-    width: 100%;
-  
-}
+    .grid-container {
+        width: 100%;
 
-.galeriaphotos {
-    justify-content: center;
-    align-items: center;
-    max-width: 21%;
-    padding: 4px;
-    object-fit: cover;
-    background-color: $main-color;
-    margin-left: 2px;
+        .galeriaphotos {
+            justify-content: center;
+            align-items: center;
+            max-width: 21%;
+            padding: 4px;
+            object-fit: cover;
+            background-color: $main-color;
+            margin-left: 2px;
+        }
 
+
+    }
 }

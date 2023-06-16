@@ -1,10 +1,12 @@
 .nuestrosh2 {
     text-align: center;
     font-size: $title-size;
-    font-family: $grafitti;
-     /*@extend .degrade;*/
-     @include degrade;
+    font-family: $titulo;
+    /*@extend .degrade;*/
+    @include degrade;
     padding-top: 2%;
+
+
 }
 
 .nuestrosh3 {
@@ -25,20 +27,27 @@
     object-fit: cover;
     text-align: center;
 
+    .cardsbody {
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .cardsbody img {
+        width: 100%;
+        object-fit: cover;
+        position: sticky;
+
+    }
+
+    .ptexto {
+        font-size: 14px;
+    }
 }
 
-.cardsbody img {
-    width: 100%;
-    object-fit: cover;
-    position: sticky;
 
-}
 
-.cardsbody {
-    display: inline-block;
-    width: 100%;
 
-}
 
 .containernuestrosgrid {
     width: 100%;
@@ -48,5 +57,12 @@
     grid-template-rows: auto auto auto;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6%;
 
+}
+
+.nuestros {
+    font-family: $marker;
+    font-size: 25px;
+    color: $color2;
 }

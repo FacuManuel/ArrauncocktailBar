@@ -1,12 +1,18 @@
- .titulos {
-     background-image: linear-gradient(aqua, white);
-     color: transparent;
-     -webkit-background-clip: text;
-     background-clip: text;
- }
+ .fondo {
+     background-image: url("../imagenes/fondos/arrauntoshan.jpg");
+     background-color: black;
+     background-size: cover;
+     background-repeat: no-repeat;
+     object-fit: cover;
+     position: sticky;
+     color: white;
+     }
+     
+     
+ 
 
  @mixin degrade {
-     background-image: linear-gradient(aqua, white);
+     background-image: linear-gradient(#52C0CC, white);
      color: transparent;
      -webkit-background-clip: text;
      background-clip: text;
