@@ -28,93 +28,94 @@
 
             /*logo*/
                 {
-        
+
                 grid-column-start: 1;
                 grid-column-end: 1;
                 grid-row-start: 1;
                 grid-row-end: 1;
                 grid-area: "item1";
-                
+
 
                 .logofooter {
                     width: 70px;
                     margin-left: 20%;
                     margin-top: 15%;
-                   
+
                 }
             }
-
-
-
-            .item2
-
-            /*nav*/
-                {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 2;
-                grid-row-end: 2;
-                grid-area: "item3";
-
-                .ulnav {
-                    text-align: center;
-                    margin-top: 6%;
-
-
-
-                    .ulnav li {
-                        padding: 0%;
-                        font-size: 14px;
-
-                    }
-                }
-
-
-
-            }
-
-
-
-            .item3
-
-            /*texto*/
-                {
-                grid-column-start: 2;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 3;
-                grid-area: "item2";
-
-                .copryght {
-
-                    flex-direction: column-reverse;
-                    margin-top: 2%;
-                    padding: 0%;
-                    border: 0%;
-                    justify-content: center;
-                    align-items: center;
-
-
-
-
-                    .pfooter2 {
-                        text-align: center;
-                        padding: 0%;
-
-                    }
-
-                    .pfooter {
-                        text-align: center;
-                        padding: 0%;
-
-                    }
-                }
-        
-
-
-            
         }
-       
+
+
+
+        .item2
+
+        /*nav*/
+            {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-area: "item3";
+
+            .ulnav {
+                text-align: center;
+                margin-top: 6%;
+
+
+
+                .ulnav li {
+                    padding: 0%;
+                    font-size: 14px;
+
+                }
+            }
+
+
+
+        }
+
+
+
+        .item3
+
+        /*texto*/
+            {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-area: "item2";
+
+            .copryght {
+
+                flex-direction: column-reverse;
+                margin-top: 2%;
+                padding: 0%;
+                border: 0%;
+                justify-content: center;
+                align-items: center;
+
+
+
+
+                .pfooter2 {
+                    text-align: center;
+                    padding: 0%;
+
+                }
+
+                .pfooter {
+                    text-align: center;
+                    padding: 0%;
+
+                }
+            }
+
+
+
+
+        }
+
 
     }
 
@@ -241,6 +242,7 @@
     /*fin galeria*/
 
     /*historia*/
+
     main {
         .h2historia {
             font-size: 3rem;
@@ -274,54 +276,42 @@
 
 
     /*navbar grid*/
-    header .conjuntoheader {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0%;
-        padding: 0%;
 
-        .logoytituloresponsive {
-            display: inline-flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 0%;
+    .navbar-expand-lg {
+        .container-fluid h1 {
+            font-size: 1.5rem;
             margin: 0%;
-            font-size: 1.2rem;
-
-            .logomenu {
-                width: 70px;
-            }
-
-            .divtitulo {
-                .tituloh1 {
-                    margin-right: 0, 3%;
-                    font-size: 1.5em;
-                }
-            }
+            padding: 0%;
+            justify-content: center;
+            align-items: center;
         }
 
-        .divnavmenu {
+        .d-flex {
+            padding: 0%;
             text-align: center;
-
-            .navmenu {
-                display: inline-flex;
-                margin: 0%;
-                padding: 0%;
-                font-size: 14px;
-                text-align: center;
-
-
-                ul li a {
-                    padding: 0%;
-                    margin: 0%;
-                }
-            }
-
+            justify-content: center;
         }
+
+        .logomenu {.navbar-brand {
+            margin: 0%;
+            padding: 0%;
+          
+
+            img {
+                margin: 0%;
+            }
+        }}
     }
+
+
+
+
+
+
+
+
+
+
 
     /* fin navbar grid*/
     /*nosotros*/
@@ -348,5 +338,4 @@
     .mailto2 {
         text-align: center;
     }
-
-}}
+}
