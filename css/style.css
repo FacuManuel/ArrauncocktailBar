@@ -10,7 +10,7 @@
 
 /*sirve con imagenes tambien!. */
 .fondo, body {
-  background-image: url("../imagenes/fondos/arrauntoshan.jpg");
+  background-image: url("../../imagenes/fondos/arrauntoshan.jpg");
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
     display: grid;
     grid-template-rows: repeat(1fr 1fr);
     grid-template-columns: repeat(1fr 2fr 2fr);
-    grid-template-areas: "item1 item3 item3" "item2 item2";
+    grid-template-areas: "item1 item3 item3" "item2 item2 item2";
     justify-items: center;
     align-items: stretch;
   }
@@ -60,12 +60,18 @@
     grid-row-end: 2;
     grid-area: "item3";
   }
-  footer .item2 .ulnav {
+  footer .item2 .navfooter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% !important;
+    font-size: 14px;
     text-align: center;
-    margin-top: 6%;
   }
-  footer .item2 .ulnav .ulnav li {
-    padding: 0%;
+  footer .item2 .navfooter .ulnav {
+    text-align: center;
+    margin-top: 4%;
+  }
+  footer .item2 .navfooter .ulnav .ulnav li {
     font-size: 14px;
   }
   footer .item3 {
@@ -346,8 +352,11 @@
   width: auto;
   color: azure;
   margin-bottom: 4%;
-  background-image: url("../../imagenes/fondos/hola.png");
-  background-position: center;
+  background-image: url("../../imagenes/fondos/mashielos.jpg");
+  object-fit: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid black;
 }
 
@@ -811,7 +820,7 @@ footer {
 
 header {
   display: block;
-  background-image: url(../imagenes/fondos/galaxia.webp);
+  background-image: url("../../imagenes/fondos/galaxia2.jpg");
   background-repeat: repeat;
   object-fit: cover;
   top: 0;
@@ -819,6 +828,7 @@ header {
   width: auto;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid black;
 }
 
 h1 {

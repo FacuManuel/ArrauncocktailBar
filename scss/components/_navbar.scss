@@ -17,7 +17,7 @@
 
 header {
     display: block;
-    background-image: url(../imagenes/fondos/galaxia.webp);
+    background-image: url("../../imagenes/fondos/galaxia2.jpg");
     background-repeat: repeat;
     object-fit: cover;
     top: 0;
@@ -25,6 +25,7 @@ header {
     width: auto;
     justify-content: space-between;
     align-items: center;
+    border: $border;
 
 
 

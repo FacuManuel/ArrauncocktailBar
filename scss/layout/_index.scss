@@ -97,8 +97,11 @@
     width: auto;
     color: azure;
     margin-bottom: 4%;
-    background-image: url("../../imagenes/fondos/hola.png");
-    background-position: center;
+    background-image: url("../../imagenes/fondos/mashielos.jpg");
+    object-fit: cover;
+    background-position-y:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: $border;
 }
 
