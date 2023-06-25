@@ -276,29 +276,27 @@
 
     /*navbar grid*/
     .conjuntoheader {
-        display: flex;
+        display: inline-block;
         flex-wrap: wrap;
+
 
         .divnavmenu {
             display: inline-flex;
             text-align: center;
             justify-content: center;
+            width: 100%;
 
             .navmenu {
                 margin: 0%;
-
-
-                ul {
-                    font-size: 2.5em;
-
-                    li {}
-                }
 
             }
         }
 
         .logoytituloresponsive {
+            width: 100%;
+
             .divtitulo {
+                width: 100%;
                 font-size: 65%;
             }
         }

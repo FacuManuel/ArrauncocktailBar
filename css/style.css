@@ -198,21 +198,23 @@
   /*fin nuestros*/
   /*navbar grid*/
   .conjuntoheader {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
   }
   .conjuntoheader .divnavmenu {
     display: inline-flex;
     text-align: center;
     justify-content: center;
+    width: 100%;
   }
   .conjuntoheader .divnavmenu .navmenu {
     margin: 0%;
   }
-  .conjuntoheader .divnavmenu .navmenu ul {
-    font-size: 2.5em;
+  .conjuntoheader .logoytituloresponsive {
+    width: 100%;
   }
   .conjuntoheader .logoytituloresponsive .divtitulo {
+    width: 100%;
     font-size: 65%;
   }
   .navbar-expand-lg .container-fluid h1 {
