@@ -31,20 +31,6 @@
   /* foooter grid */
   footer {
     display: grid;
-    /* final  footer grid*/
-    /* index */
-    /* final index */
-    /* clasicos */
-    /* fin clasicos */
-    /*galeria*/
-    /*fin galeria*/
-    /*historia*/
-    /*fin historia*/
-    /*nuestros*/
-    /*fin nuestros*/
-    /*navbar grid*/
-    /* fin navbar grid*/
-    /*nosotros*/
   }
   footer .conjuntofooter {
     flex-direction: row;
@@ -67,29 +53,29 @@
     margin-left: 20%;
     margin-top: 15%;
   }
-  footer .conjuntofooter .item2 {
+  footer .item2 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
     grid-area: "item3";
   }
-  footer .conjuntofooter .item2 .ulnav {
+  footer .item2 .ulnav {
     text-align: center;
     margin-top: 6%;
   }
-  footer .conjuntofooter .item2 .ulnav .ulnav li {
+  footer .item2 .ulnav .ulnav li {
     padding: 0%;
     font-size: 14px;
   }
-  footer .conjuntofooter .item3 {
+  footer .item3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-area: "item2";
   }
-  footer .conjuntofooter .item3 .copryght {
+  footer .item3 .copryght {
     flex-direction: column-reverse;
     margin-top: 2%;
     padding: 0%;
@@ -97,15 +83,17 @@
     justify-content: center;
     align-items: center;
   }
-  footer .conjuntofooter .item3 .copryght .pfooter2 {
+  footer .item3 .copryght .pfooter2 {
     text-align: center;
     padding: 0%;
   }
-  footer .conjuntofooter .item3 .copryght .pfooter {
+  footer .item3 .copryght .pfooter {
     text-align: center;
     padding: 0%;
   }
-  footer .containernuestros {
+  /* final  footer grid*/
+  /* index */
+  .containernuestros {
     display: flex;
     flex-flow: wrap;
     justify-items: center;
@@ -113,7 +101,7 @@
     padding-top: 10%;
     padding-bottom: 10%;
   }
-  footer .containernuestros .galeriaindex {
+  .containernuestros .galeriaindex {
     display: inline-flex;
     flex-flow: wrap;
     justify-content: center;
@@ -124,56 +112,59 @@
     background-color: black;
     filter: grayscale(0%);
   }
-  footer .titulosfotosresponsive .topfotos {
+  .titulosfotosresponsive .topfotos {
     margin-top: 0%;
   }
-  footer .titulosfotosresponsive .ptopfotos {
+  .titulosfotosresponsive .ptopfotos {
     margin-top: 0%;
   }
-  footer .conjunto-info-index {
+  .conjunto-info-index {
     text-align: center;
   }
-  footer .conjunto-info-index .h2-index {
+  .conjunto-info-index .h2-index {
     padding-bottom: 5%;
   }
-  footer .conjunto-info-index .p-tlf-index {
+  .conjunto-info-index .p-tlf-index {
     padding: 3%;
   }
-  footer .conjunto-info-index .h3index {
+  .conjunto-info-index .h3index {
     padding: 5%;
   }
-  footer .maparesponsive {
+  .maparesponsive {
     justify-content: center;
   }
-  footer main .h1clasicos {
+  /* final index */
+  /* clasicos */
+  main .h1clasicos {
     font-size: 3rem;
   }
-  footer main .h3clasicos {
+  main .h3clasicos {
     padding-bottom: 4%;
   }
-  footer main .listaclasicos {
+  main .listaclasicos {
     padding-bottom: 10%;
   }
-  footer main .listaclasicos .liclasicos {
+  main .listaclasicos .liclasicos {
     padding-top: 7%;
   }
-  footer main .listaclasicos .textococtelesclasicos {
+  main .listaclasicos .textococtelesclasicos {
     font-size: 20px;
   }
-  footer main .coctelesxnombre {
+  main .coctelesxnombre {
     text-align: center;
   }
-  footer .containernuestros2 {
+  /* fin clasicos */
+  /*galeria*/
+  .containernuestros2 {
     display: flex;
     flex-flow: wrap;
     justify-items: center;
     align-items: center;
-    width: 100%;
     margin: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
   }
-  footer .containernuestros2 .galeriaphotos {
+  .containernuestros2 .galeriaphotos {
     display: inline-flex;
     flex-flow: wrap;
     justify-content: center;
@@ -183,77 +174,84 @@
     object-fit: cover;
     background-color: black;
   }
-  footer main .h2historia {
+  /*fin galeria*/
+  /*historia*/
+  main .h2historia {
     font-size: 3rem;
     font-family: "Rubik Puddles", cursiva, Verdana;
     text-align: center;
   }
-  footer .divnuestros .nuestrosh2 {
+  /*fin historia*/
+  /*nuestros*/
+  .divnuestros .nuestrosh2 {
     font-size: 45px;
     padding-bottom: 2%;
   }
-  footer .divnuestros .nuestrosh3 {
+  .divnuestros .nuestrosh3 {
     padding: 2%;
   }
-  footer .divnuestros .containernuestrosgrid {
+  .divnuestros .containernuestrosgrid {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15%;
   }
-  footer header .conjuntoheader {
-    display: grid;
-    align-items: center;
+  /*fin nuestros*/
+  /*navbar grid*/
+  .conjuntoheader {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .conjuntoheader .divnavmenu {
+    display: inline-flex;
+    text-align: center;
     justify-content: center;
-    flex-direction: column;
+  }
+  .conjuntoheader .divnavmenu .navmenu {
+    margin: 0%;
+  }
+  .conjuntoheader .divnavmenu .navmenu ul {
+    font-size: 2.5em;
+  }
+  .conjuntoheader .logoytituloresponsive .divtitulo {
+    font-size: 65%;
+  }
+  .navbar-expand-lg .container-fluid h1 {
+    font-size: 1rem;
     margin: 0%;
     padding: 0%;
-  }
-  footer header .conjuntoheader .logoytituloresponsive {
-    display: inline-flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+  }
+  .navbar-expand-lg .d-flex {
     padding: 0%;
-    margin: 0%;
-    font-size: 1.2rem;
-  }
-  footer header .conjuntoheader .logoytituloresponsive .logomenu {
-    width: 70px;
-  }
-  footer header .conjuntoheader .logoytituloresponsive .divtitulo .tituloh1 {
-    margin-right: 0, 3%;
-    font-size: 1.5em;
-  }
-  footer header .conjuntoheader .divnavmenu {
     text-align: center;
+    justify-content: center;
   }
-  footer header .conjuntoheader .divnavmenu .navmenu {
-    display: inline-flex;
+  .navbar-expand-lg .logomenu .navbar-brand {
     margin: 0%;
     padding: 0%;
-    font-size: 14px;
-    text-align: center;
   }
-  footer header .conjuntoheader .divnavmenu .navmenu ul li a {
-    padding: 0%;
+  .navbar-expand-lg .logomenu .navbar-brand img {
     margin: 0%;
   }
-  footer .divintro {
+  /* fin navbar grid*/
+  /*nosotros*/
+  .divintro {
     text-align: center;
   }
-  footer .about {
+  .about {
     text-align: center;
   }
-  footer .divhorarios {
+  .divhorarios {
     text-align: center;
   }
-  footer .divtlf {
+  .divtlf {
     text-align: center;
   }
-  footer .divdir {
+  .divdir {
     text-align: center;
   }
-  footer .mailto2 {
+  .mailto2 {
     text-align: center;
   }
 }
