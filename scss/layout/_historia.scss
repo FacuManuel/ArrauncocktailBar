@@ -1,9 +1,8 @@
 
 .h2historia {
     font-size: $title-size;
-    font-family: $titulo;
+    font-family: $marker;
     text-align: center;
-     /*@extend .degrade;*/
      @include degrade;
     padding-top: 2%;
  

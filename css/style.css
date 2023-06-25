@@ -178,7 +178,7 @@
   /*historia*/
   main .h2historia {
     font-size: 3rem;
-    font-family: "Rubik Puddles", cursiva, Verdana;
+    font-family: "Permanent Marker", cursive, Verdana;
     text-align: center;
   }
   /*fin historia*/
@@ -216,6 +216,9 @@
   .conjuntoheader .logoytituloresponsive .divtitulo {
     width: 100%;
     font-size: 65%;
+  }
+  .conjuntoheader .logoytituloresponsive .divtitulo .tituloh1 {
+    font-family: "Permanent Marker", cursive, Verdana;
   }
   .navbar-expand-lg .container-fluid h1 {
     font-size: 1rem;
@@ -257,6 +260,7 @@
     text-align: center;
   }
 }
+/* fin nosotros*/
 .conjunto-info-index {
   display: flex;
   flex-direction: column;
@@ -468,7 +472,6 @@
   font-size: 4rem;
   font-family: "Permanent Marker", cursive, Verdana;
   text-align: center;
-  /*@extend .degrade;*/
   background-image: linear-gradient(#52C0CC, white);
   color: transparent;
   -webkit-background-clip: text;
@@ -793,7 +796,6 @@ footer {
   font-family: "Permanent Marker", cursive, Verdana;
 }
 
-/*header*/
 .conjuntoheader {
   display: flex;
   justify-content: space-between;

@@ -245,7 +245,7 @@
     main {
         .h2historia {
             font-size: 3rem;
-            font-family: $grafitti;
+            font-family: $marker;
             text-align: center;
         }
 
@@ -298,6 +298,10 @@
             .divtitulo {
                 width: 100%;
                 font-size: 65%;
+
+                .tituloh1 {
+                    font-family: $marker;
+                }
             }
         }
     }
@@ -366,3 +370,5 @@
         text-align: center;
     }
 }
+
+/* fin nosotros*/
