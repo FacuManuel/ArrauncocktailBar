@@ -201,6 +201,8 @@
     main {
         .h1clasicos {
             font-size: 3rem;
+            padding: 0%;
+            margin: 0%;
         }
 
         .h3clasicos {
@@ -209,9 +211,11 @@
 
         .listaclasicos {
             padding-bottom: 10%;
+            
 
             .liclasicos {
                 padding-top: 7%;
+                
             }
 
             .textococtelesclasicos {
@@ -221,6 +225,7 @@
 
         .coctelesxnombre {
             text-align: center;
+         
         }
     }
 

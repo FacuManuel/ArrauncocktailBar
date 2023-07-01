@@ -3,7 +3,6 @@
     font-family: $titulo;
     text-align: center;
     padding: 1%;
-    /*@extend .degrade;*/
     @include degrade;
     padding-top: 2%;
 }

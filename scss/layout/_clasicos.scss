@@ -2,9 +2,6 @@
     font-size: $title-size;
     font-family: $titulo;
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    padding-top: 2%;
     @include degrade;
 }
 
@@ -63,7 +60,7 @@
     text-shadow: 10px 5px 10px rgba(243, 247, 246, 0.183);
     margin-top: 1%;
     margin-bottom: 1%;
-    /*@extend .degrade;*/
+
     @include degrade;
 }
 

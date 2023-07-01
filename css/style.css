@@ -143,6 +143,8 @@
   /* clasicos */
   main .h1clasicos {
     font-size: 3rem;
+    padding: 0%;
+    margin: 0%;
   }
   main .h3clasicos {
     padding-bottom: 4%;
@@ -414,9 +416,6 @@
   font-size: 4rem;
   font-family: "Permanent Marker", cursive, Verdana;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  padding-top: 2%;
   background-image: linear-gradient(#52C0CC, white);
   color: transparent;
   -webkit-background-clip: text;
@@ -469,7 +468,6 @@
   text-shadow: 10px 5px 10px rgba(243, 247, 246, 0.183);
   margin-top: 1%;
   margin-bottom: 1%;
-  /*@extend .degrade;*/
   background-image: linear-gradient(#52C0CC, white);
   color: transparent;
   -webkit-background-clip: text;
@@ -541,7 +539,6 @@
   font-family: "Permanent Marker", cursive, Verdana;
   text-align: center;
   padding: 1%;
-  /*@extend .degrade;*/
   background-image: linear-gradient(#52C0CC, white);
   color: transparent;
   -webkit-background-clip: text;
