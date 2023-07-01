@@ -267,6 +267,23 @@
   }
 }
 /* fin nosotros*/
+/*----------------------------------------------------------*/
+/* media queris tablets */
+@media (max-width: 850px) {
+  header .conjuntoheader {
+    width: 100%;
+    display: inline-block;
+  }
+  header .conjuntoheader .logoytituloresponsive {
+    justify-content: center;
+  }
+  header .conjuntoheader .divnavmenu {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .conjunto-info-index {
   display: flex;
   flex-direction: column;

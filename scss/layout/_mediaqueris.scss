@@ -63,7 +63,7 @@
                 padding: 0% !important;
                 font-size: 14px;
                 text-align: center;
-               
+
 
 
                 .ulnav {
@@ -349,14 +349,6 @@
 
 
 
-
-
-
-
-
-
-
-
     /* fin navbar grid*/
     /*nosotros*/
     .divintro {
@@ -382,6 +374,43 @@
     .mailto2 {
         text-align: center;
     }
+
+
+
+
 }
 
 /* fin nosotros*/
+
+
+/*----------------------------------------------------------*/
+/* media queris tablets */
+
+
+@media(max-width: 850px) {
+    header {
+
+        .conjuntoheader {
+            width: 100%;
+            display: inline-block;
+
+            .logoytituloresponsive {
+                justify-content: center;
+            }
+
+            .divnavmenu {
+                display: inline-flex;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+
+
+            }
+        }
+
+
+    }
+
+
+
+}
