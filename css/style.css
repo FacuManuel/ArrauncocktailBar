@@ -412,6 +412,78 @@
   margin-bottom: 3%;
 }
 
+div.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+  margin-bottom: 5%;
+}
+div.container .time {
+  justify-content: center;
+  align-items: center;
+}
+div.container #clock h2 {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.8em;
+}
+div.container #clock #time {
+  display: flex;
+}
+div.container #clock #time div {
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
+}
+div.container #clock #time div span {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 80px;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+div.container #clock #time div span:nth-child(2) {
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  z-index: 9;
+  box-shadow: none;
+  background: #127fd6;
+  text-transform: uppercase;
+}
+div.container #clock #time div:nth-last-child(2) span {
+  background: #ff006a;
+}
+div.container #clock #time div:nth-last-child(2) span:nth-child(2) {
+  background: #ec0062;
+}
+div.container #clock #time div:nth-last-child(1) span {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 40px;
+  font-size: 1.5em;
+  background: #fff;
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
+}
+
 .h1clasicos {
   font-size: 4rem;
   font-family: "Permanent Marker", cursive, Verdana;
@@ -679,7 +751,6 @@
   text-align: center;
   font-size: 4rem;
   font-family: "Permanent Marker", cursive, Verdana;
-  /*@extend .degrade;*/
   background-image: linear-gradient(#52C0CC, white);
   color: transparent;
   -webkit-background-clip: text;
