@@ -447,7 +447,7 @@ div.container #clock #time div span {
   display: block;
   width: 100px;
   height: 80px;
-  background: #2196f3;
+  background: rgb(1, 35, 60);
   color: #fff;
   font-weight: 300;
   display: flex;
@@ -464,14 +464,14 @@ div.container #clock #time div span:nth-child(2) {
   font-weight: 500;
   z-index: 9;
   box-shadow: none;
-  background: #127fd6;
+  background: #080808;
   text-transform: uppercase;
 }
 div.container #clock #time div:nth-last-child(2) span {
   background: #ff006a;
 }
 div.container #clock #time div:nth-last-child(2) span:nth-child(2) {
-  background: #ec0062;
+  background: #020202;
 }
 div.container #clock #time div:nth-last-child(1) span {
   position: absolute;
@@ -479,8 +479,8 @@ div.container #clock #time div:nth-last-child(1) span {
   width: 60px;
   height: 40px;
   font-size: 1.5em;
-  background: #fff;
-  color: #000;
+  background: #f6ff00;
+  color: #020202;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
 }
 
@@ -562,6 +562,27 @@ div.container #clock #time div:nth-last-child(1) span {
 }
 .coctelesxnombre li:hover {
   background-color: #337880;
+}
+
+.cocktail-simulator {
+  width: 300px;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-image: url(../../imagenes/fondos/limones.webp);
+  object-fit: cover;
+  background-position-x: 80%;
+  background-position-y: 85%;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.509);
 }
 
 .h2historia {

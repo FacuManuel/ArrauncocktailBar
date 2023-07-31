@@ -1,66 +1,67 @@
-//let edadPersonal = 28;
-//let nombrePersonal = "Facundo";
-//let numeroUno = parseInt("5");
-//let numeroDos = 2;
 
-//let resultadoSuma = numeroDos + numeroUno;
+{
 
-//console.log("resultado suma", resultadoSuma);
+    let saludo = "Bienvenido";
+    let persona2 = prompt(`Ingrese su nombre`);
 
-// ejemplos 
-
-//let saludo = "hola, bienvenido";
-//let nombre = "Facundo";
-//let saludoCompleto = saludo + " " + nombre;
-
-//console.log("apa kaixo", saludoCompleto);
-
-//comando prompt + let para guardar la variable
-
-//let persona = prompt("ingrese su nombre");
-//alert(saludo + " " + persona);
-
-//console.log(typeof numero);
-//console.log(typeof nombre);
-//console.log(typeof numero);
-
-//parseInt(sirve con enteros y desimales)  - parseFloat - number (en consola?) se usan para convertir string en numero
-// ejemplo parseInt("5")
+    alert(saludo + " " + persona2);
+    alert(`${saludo} ${persona2}`);
 
 
+    let ciudad = prompt("Ingrese una ciudad");
+    let codigoPostal = prompt("Ingrese un código postal");
+    alert(`${ciudad} ${codigoPostal} compras disponibles!`);
+
+    let numeroif = parseInt(prompt("ingrese su edad"));
+    if (numeroif < 18) { alert("Eres menor de edad y nuestro contenido es no apto para ti! te recomendamos que abandones la pagina!") }
+    else if (numeroif > 18) { alert("Se a concedido el acceso a la web") }
+    else { alert("respuesta incorrecta, ingrese su edad!") };
+
+    let entrada = prompt("ingresa usuario");
+    while (entrada !== "ESC") {
+        switch (entrada) {
+            case "usuario1":
+                alert("Bienvenido al panel de usuario");
+                break;
+            case "usuario2":
+                alert("Que bueno verte de vuelta!");
+                break;
+            default:
+                alert("¿Quién eres?");
+                break;
+        }
+        entrada = prompt("ingresa usuario");
+    }
+}
+
+let metodo = "tarjeta"
+switch (metodo) {
+    case "tarjeta":
+        console.log(`pago con tarjeta`);
+        break;
+    case "efectivo":
+        console.log(`pago en efectivo`);
+        break;
+    default:
+        console.log(`no se ha seleccionado ningún método de pago`);
+        break;
+}
 
 
-
-//desafio
-
-let saludo = "hola, bienvenido";
-let persona = prompt("ingrese su nombre");
-alert(`${saludo} ${persona}`);
-
-let numeroUno = parseInt("5");
-let number = parseInt(prompt("ingrese un numero"));
-alert(number + numeroUno);
-
-let ciudad = prompt("ingrese una ciudad");
-let codigoPostal = prompt("ingrese un codigo postal");
-alert(ciudad + " " + codigoPostal + " " + "envios disponibles");
-
-let numeroif = parseInt(prompt("elija numero del 1 al 10"));
-if (numeroif < 6) { alert("5 o menor")}
-else if (numeroif < 11) { alert("5 o mayor") }
-else{ alert("respuesta incorrecta") };
-
-
-
-
-//adicionales
-//reloj
-
+let numero = parseInt(prompt("ingrese un numero"));
+for (let i = 2; i <= 4; i++) {
+    let resultado = numero + i;
+    alert(`${numero} + ${i} = ${resultado}`);
+}
+alert("GRACIAS!");
 
 
 
+function goodbye() {
+    alert("Disfruta de la pagina !!!");
+}
+goodbye();
 
 
 
-/* ------------------FUNCIONANDO EN LA PAGINA--------------------- */
 

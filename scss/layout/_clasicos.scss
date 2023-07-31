@@ -83,3 +83,26 @@
         background-color: $color4;
     }
 }
+
+
+//simulador
+.cocktail-simulator {
+    width: 300px;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-image: url(../../imagenes/fondos/limones.webp);
+    object-fit: cover;
+    background-position-x: 80%;
+    background-position-y: 85%;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.509);
+  }

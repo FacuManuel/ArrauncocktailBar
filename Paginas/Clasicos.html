@@ -16,7 +16,7 @@
      historia del bar, Arraun, san sebastian, donostia, guipuzkoa, españa, pais vasco, basque country,
      signature, de autor, nuestros, tragos, beer, mixologos, top bars, top 50 españa, top 100 españa">
     <meta name="robots" content="index">
-    <link rel="icon" href="../imagenes/logo-banners/logo.jpg"> 
+    <link rel="icon" href="../imagenes/logo-banners/logo.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <title>ARRAUN Cocktail Bar</title>
 </head>
@@ -59,7 +59,7 @@
                 <p class="textococtelesclasicos"> Los cócteles famosos y populares son aquellos que perduran en el
                     tiempo para convertirse en
                     legendarios, bebidas que
-                     aguantan las tendencias y modas del momento, cócteles con cientos de años a sus espaldas que se
+                    aguantan las tendencias y modas del momento, cócteles con cientos de años a sus espaldas que se
                     siguen consumiendo
                     en los hogares y las barras del mundo. Historias mezcladas y agitadas que han visto guerras,
                     marineros y piratas,
@@ -317,10 +317,26 @@
 
             </div>
         </div>
+
+        <div class="cocktail-simulator">
+            <h2>Calculadora en Cantidad</h2>
+            <label for="cocktail">Selecciona un cóctel:</label>
+            <select id="cocktail">
+                <option value="margarita">Margarita</option>
+                <option value="mojito">Mojito</option>
+                <option value="piña_colada">Piña Colada</option>
+                <option value="negroni">negroni</option>
+                <option value="old_fashion">Old Fashion</option>
+            </select>
+            <label for="quantity">Cantidad de cócteles:</label>
+            <input type="number" id="quantity" placeholder="Ingresa la cantidad">
+            <button onclick="calculateIngredients()">Calcular Ingredientes</button>
+            <div id="result"></div>
+        </div>
     </main>
     <footer>
 
-        
+
         <div class="conjuntofooter">
             <div class="item1">
                 <div class="logoftr">
@@ -355,6 +371,7 @@
 
 
     </footer>
+    <script src="../javascriptpages/clasicos.js"></script>
 </body>
 
 </html>
